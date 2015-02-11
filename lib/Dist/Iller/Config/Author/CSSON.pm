@@ -6,12 +6,12 @@ use Dist::Iller::Standard;
 
 class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Config {
 
-    use YAML::Tiny;
+    use Path::Tiny;
 
     has filepath => (
         is => 'ro',
         isa => Path,
-        default => 'share/author-csson.yaml',
+        default => 'author-csson.yaml',
         coerce => 1,
     );
     has is_task => (
@@ -23,19 +23,19 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         is => 'rw',
         isa => Str,
         lazy => 1,
-        default => sub { shift->payload->{'installer'} || 'ModuleBuildTiny' },
+        default => 'ModuleBuildTiny',
     );
     has is_private => (
         is => 'rw',
         isa => Int,
         lazy => 1,
-        default => sub { shift->payload->{'is_private'} || 0 },
+        default => 0,
     );
     has is_task => (
         is => 'rw',
         isa => Int,
         lazy => 1,
-        default => sub { shift->payload->{'is_task'} || 0 },
+        default => 0,
     );
     has homepage => (
         is => 'rw',
@@ -45,14 +45,7 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
     );
 
     method _build_homepage {
-        my $distname;
-        if(path('iller.ini')->exists) {
-            $distname = Config::INI::Reader->read_file('iller.ini')->{'_'}{'name'};
-        }
-        elsif(path('dist.ini')->exists) {
-            $distname = Config::INI::Reader->read_file('dist.ini')->{'_'}{'name'};
-        }
-        return sprintf 'https://metacpan.org/release/' . $distname;
+        return sprintf 'https://metacpan.org/release/' . $self->distribution_name;
     }
 
     method build_file {
@@ -64,6 +57,21 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
     }
     method is_cpan_release {
         return !$ENV{'FAKE_RELEASE'} && $self->is_private ? 0 : 1;
+    }
+    method add_default_github {
+        # check git config
+        my $add_default_github = 0;
+        my $git_config = path('.git/config');
+        if($git_config->exists) {
+            my $git_config_contents = $git_config->slurp_utf8;
+            if($git_config_contents =~ m{github\.com:([^/]+)/(.+)\.git}) {
+                $add_default_github = 1;
+            }
+            else {
+                say ('[DI/@Author::CSSON] No github url found');
+            }
+        }
+        return $add_default_github;
     }
 
 

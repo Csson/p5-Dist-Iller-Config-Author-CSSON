@@ -1,7 +1,6 @@
 ---
 +doctype: dist
 
-name: Dist-Iller-Config-Author-CSSON
 author: Erik Carlsson <info@code301.com>
 license: Perl_5
 copyright_holder: Erik Carlsson <info@code301.com>
@@ -13,13 +12,13 @@ copyright_year: 2015
    - META.json
    - LICENSE
    - README.md
-   - Build.PL
+   - $self.build_file
 
  - +plugin: CopyFilesFromBuild
    copy:
    - META.json
    - LICENSE
-   - Build.PL
+   - $self.build_file
 
  - +plugin: ReversionOnRelease
    prompt: 1
@@ -40,7 +39,11 @@ copyright_year: 2015
    format: '%d.%02d%02d'
    numify_version: 0
 
+ - +plugin: TaskWeaver
+   +add_if: $self.is_task
+
  - +plugin: PodWeaver
+   +remove_if: $self.is_task
 
  - +plugin: Git::Check
    allow_dirty:
@@ -49,11 +52,12 @@ copyright_year: 2015
    - META.json
    - README.md
    - README
-   - Build.PL
+   - $self.build_file
 
  - +plugin: GithubMeta
+   +remove_if: $self.is_private
    issues: 1
-   homepage: http://metacpan.org/release/Dist-Iller-Config-Author-CSSON
+   homepage: $self.homepage
 
  - +plugin: Readme
 
@@ -63,19 +67,17 @@ copyright_year: 2015
    location: root
 
  - +plugin: MetaNoIndex
-   directory: 
-   - t 
-   - xt 
-   - inc 
-   - share 
-   - eg 
+   directory:
+   - t
+   - xt
+   - inc
+   - share
+   - eg
    - examples
-
- - +plugin: Prereqs::FromCPANfile
 
  - +plugin: Prereqs::Plugins
 
- - +plugin: ModuleBuildTiny
+ - +plugin: $self.installer
 
  - +plugin: MetaJSON
 
@@ -103,7 +105,8 @@ copyright_year: 2015
  - +plugin: PodSyntaxTests
  - +plugin: MetaYAML
  - +plugin: License
- - +plugin: ExtraTests
+ - +plugin: CheckExtraTests
+ - +plugin: RunExtraTests
 
  - +plugin: ShareDir
  - +plugin: ExecDir
@@ -113,14 +116,16 @@ copyright_year: 2015
 
  - +plugin: CheckChangesHasContent
 
- - +plugin: TestRelease
-
  - +plugin: ConfirmRelease
 
  - +plugin: FakeRelease
    +add_if: $env.fake_release
 
+ - +plugin: UploadToStratopan
+   +add_if: $self.is_private_release
+
  - +plugin: UploadToCPAN
+   +add_if: $self.is_cpan_release
 
  - +plugin: Git::Tag
    tag_format: '%v'
@@ -130,57 +135,73 @@ copyright_year: 2015
    remotes_must_exist: 1
 
 ---
-
 +doctype: weaver
 
 +plugins:
  - +plugin: '@CorePrep'
+   +in: PluginBundle
 
  - +plugin: -SingleEncoding
 
  - +plugin: Name
+   +in: Section
 
  - +plugin: Version
+   +in: Section
    format: Version %v, released %{YYYY-MM-dd}d.
 
  - +plugin: prelude
    +base:  Region
+   +in: Section
 
  - +plugin: Synopsis
    +base:  Generic
+   +in: Section
 
  - +plugin: Description
    +base:  Generic
+   +in: Section
 
  - +plugin: Overview
    +base:  Generic
+   +in: Section
 
  - +plugin: Attributes
    +base:  Collect
+   +in: Section
    command: attr
 
  - +plugin: Methods
    +base:  Collect
+   +in: Section
    command: method
 
  - +plugin: Functions
    +base:  Collect
+   +in: Section
    command: func
 
  - +plugin: Leftovers
+   +in: Section
 
  - +plugin: postlude
+   +in: Section
    +base:  Region
 
  - +plugin: Source::DefaultGitHub
+   +in: Section
+   +add_if: $self.add_default_github
    text: L<%s>
 
  - +plugin: Homepage::DefaultCPAN
+   +in: Section
    text: L<%s>
 
  - +plugin: Authors
+   +in: Section
 
  - +plugin: Legal
+   +in: Section
 
  - +plugin: List
    +base: -Transformer
