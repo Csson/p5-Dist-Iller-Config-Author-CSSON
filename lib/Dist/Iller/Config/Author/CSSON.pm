@@ -23,15 +23,9 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         is => 'rw',
         isa => Str,
         lazy => 1,
-        default => 'ModuleBuildTiny',
+        default => 'MakeMaker',
     );
     has is_private => (
-        is => 'rw',
-        isa => Int,
-        lazy => 1,
-        default => 0,
-    );
-    has is_task => (
         is => 'rw',
         isa => Int,
         lazy => 1,
@@ -42,6 +36,11 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         isa => Str,
         lazy => 1,
         builder => 1,
+    );
+    has splint => (
+        is => 'rw',
+        isa => Int,
+        default => 0,
     );
 
     method _build_homepage {

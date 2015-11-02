@@ -1,12 +1,22 @@
 ---
-+doctype: dist
+doctype: dist
 
-author: Erik Carlsson <info@code301.com>
-license: Perl_5
-copyright_holder: Erik Carlsson <info@code301.com>
-copyright_year: 2015
+header:
+  author: Erik Carlsson <info@code301.com>
+  license: Perl_5
+  copyright_holder: Erik Carlsson
+  copyright_year: 2015
 
-+plugins:
+prereqs:
+  test:
+    requires:
+      - Test::More: 0.96
+
+  develop:
+    requires:
+      - Test::Warnings
+
+plugins:
  - +plugin: Git::GatherDir
    exclude_filename:
    - META.json
@@ -102,6 +112,8 @@ copyright_year: 2015
  - +plugin: Test::Version
    +add_if: $env.illerat
 
+ - +plugin: Test::ReportPrereqs
+
  - +plugin: PodSyntaxTests
  - +plugin: MetaYAML
  - +plugin: License
@@ -115,6 +127,8 @@ copyright_year: 2015
  - +plugin: ManifestSkip
 
  - +plugin: CheckChangesHasContent
+
+ - +plugin: TestRelease
 
  - +plugin: ConfirmRelease
 
@@ -135,78 +149,71 @@ copyright_year: 2015
    remotes_must_exist: 1
 
 ---
-+doctype: weaver
+doctype: weaver
 
-+plugins:
+plugins:
  - +plugin: '@CorePrep'
-   +in: PluginBundle
 
  - +plugin: -SingleEncoding
 
  - +plugin: Name
-   +in: Section
+
+ - +plugin: Badges
+   badge:
+    - perl
+    - travis
+   formats: html, markdown
 
  - +plugin: Version
-   +in: Section
    format: Version %v, released %{YYYY-MM-dd}d.
 
  - +plugin: prelude
    +base:  Region
-   +in: Section
 
  - +plugin: Synopsis
    +base:  Generic
-   +in: Section
 
  - +plugin: Description
    +base:  Generic
-   +in: Section
 
  - +plugin: Overview
    +base:  Generic
-   +in: Section
 
  - +plugin: Attributes
    +base:  Collect
-   +in: Section
    command: attr
 
  - +plugin: Methods
    +base:  Collect
-   +in: Section
    command: method
 
  - +plugin: Functions
    +base:  Collect
-   +in: Section
    command: func
 
  - +plugin: Leftovers
-   +in: Section
 
  - +plugin: postlude
-   +in: Section
    +base:  Region
 
  - +plugin: Source::DefaultGitHub
-   +in: Section
    +add_if: $self.add_default_github
    text: L<%s>
 
  - +plugin: Homepage::DefaultCPAN
-   +in: Section
    text: L<%s>
 
  - +plugin: Authors
-   +in: Section
 
  - +plugin: Legal
-   +in: Section
 
  - +plugin: List
    +base: -Transformer
+   +in: Elemental
    transformer: List
 
  - +plugin: Splint
    +base: -Transformer
+   +in: Elemental
+   +add_if: $self.splint
    transformer: Splint

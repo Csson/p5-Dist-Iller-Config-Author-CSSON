@@ -1,13 +1,10 @@
 ---
-+doctype: dist
+doctype: dist
 
-name: Dist-Iller-Config-Author-CSSON
-author: Erik Carlsson <info@code301.com>
-license: Perl_5
-copyright_holder: Erik Carlsson <info@code301.com>
-copyright_year: 2015
+header:
+  name: Dist-Iller-Config-Author-CSSON
 
-+plugins:
+plugins:
  - +plugin: Git::GatherDir
    exclude_filename:
    - META.json
@@ -75,7 +72,7 @@ copyright_year: 2015
 
  - +plugin: Prereqs::Plugins
 
- - +plugin: ModuleBuildTiny
+ - +plugin: MakeMaker
 
  - +plugin: MetaJSON
 
@@ -131,9 +128,9 @@ copyright_year: 2015
 
 ---
 
-+doctype: weaver
+doctype: weaver
 
-+plugins:
+plugins:
  - +plugin: '@CorePrep'
 
  - +plugin: -SingleEncoding
