@@ -80,7 +80,7 @@ plugins:
 
  - +plugin: MetaProvides::Package
 
- - +plugin: ContributorsFromGit
+ - +plugin: Git::Contributors
 
  - +plugin: Test::Kwalitee::Extra
    +add_if: $env.illerat

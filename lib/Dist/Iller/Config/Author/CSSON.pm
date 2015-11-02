@@ -73,10 +73,7 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         return $add_default_github;
     }
 
-
-    method package {
-        return __PACKAGE__;
-    }
+    method package { __PACKAGE__  }
 }
 
 1;
