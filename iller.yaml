@@ -12,8 +12,7 @@ prereqs:
   runtime:
     requires:
       - Path::Tiny
-      - Dist::Iller::Standard
-      - Dist::Iller::Role::Config
+      - Dist::Iller
       - Moose: 2.00
   test:
     requires:
