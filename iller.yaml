@@ -205,7 +205,3 @@ plugins:
  - +plugin: List
    +base: -Transformer
    transformer: List
-
- - +plugin: Splint
-   +base: -Transformer
-   transformer: Splint
