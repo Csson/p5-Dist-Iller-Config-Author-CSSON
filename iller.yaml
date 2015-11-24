@@ -8,6 +8,22 @@ header:
   copyright_year: 2015
   name: Dist-Iller-Config-Author-CSSON
 
+prereqs:
+  runtime:
+    requires:
+      - Path::Tiny
+      - Dist::Iller::Standard
+      - Dist::Iller::Role::Config
+      - Moose: 2.00
+  test:
+    requires:
+      - Test::More: 0.96
+
+  develop:
+    requires:
+      - Test::Warnings
+      - Pod::Elemental::Transformer::List
+
 plugins:
  - +plugin: Git::GatherDir
    exclude_filename:
