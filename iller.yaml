@@ -2,6 +2,10 @@
 doctype: dist
 
 header:
+  author: Erik Carlsson <info@code301.com>
+  license: Perl_5
+  copyright_holder: Erik Carlsson
+  copyright_year: 2015
   name: Dist-Iller-Config-Author-CSSON
 
 plugins:
