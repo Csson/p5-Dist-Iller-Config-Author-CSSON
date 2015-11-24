@@ -67,6 +67,7 @@
             "Dist::Zilla::Plugin::ReversionOnRelease" : "0",
             "Dist::Zilla::Plugin::ShareDir" : "0",
             "Dist::Zilla::Plugin::TestRelease" : "0",
+            "Dist::Zilla::Plugin::TravisYML" : "0",
             "Dist::Zilla::Plugin::UploadToCPAN" : "0",
             "Pod::Weaver::Plugin::SingleEncoding" : "0",
             "Pod::Weaver::Plugin::Transformer" : "0",

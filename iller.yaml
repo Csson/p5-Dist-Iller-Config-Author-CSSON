@@ -119,6 +119,10 @@ plugins:
 
  - +plugin: UploadToCPAN
 
+ - +plugin: TravisYML
+   +before: Git::Tag
+   perl_version: 5.20
+
  - +plugin: Git::Tag
    tag_format: '%v'
    tag_message: ~
