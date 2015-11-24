@@ -95,6 +95,8 @@ plugins:
 
  - +plugin: MetaProvides::Package
 
+ - +plugin: DistIller::MetaGeneratedBy
+
  - +plugin: Git::Contributors
 
  - +plugin: Test::Kwalitee::Extra

@@ -2,7 +2,7 @@ use Dist::Iller::Standard;
 
 # VERSION:
 # PODCLASSNAME
-# ABSTRACT: Iller config for Csson
+# ABSTRACT: Dist::Iller config for Csson
 
 class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Config {
 
@@ -72,8 +72,6 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         }
         return $add_default_github;
     }
-
-    method package { __PACKAGE__ }
 }
 
 1;
@@ -84,12 +82,11 @@ __END__
 
 =head1 SYNOPSIS
 
-    use Dist::Iller::Config::Author::Csson;
+    # in iller.yaml
+    + config: Author::CSSON
 
 =head1 DESCRIPTION
 
-Dist::Iller::Config::Author::Csson is ...
-
-=head1 SEE ALSO
+Dist::Iller::Config::Author::Csson is a L<Dist::Iller> configuration. The plugin list is in C<share/author-csson.yaml>.
 
 =cut

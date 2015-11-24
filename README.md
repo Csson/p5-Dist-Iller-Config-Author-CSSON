@@ -1,20 +1,19 @@
 # NAME
 
-Dist::Iller::Config::Author::CSSON - Iller config for Csson
+Dist::Iller::Config::Author::CSSON - Dist::Iller config for Csson
 
 # VERSION
 
-Version 0.0001, released 2015-11-02.
+Version 0.0001, released 2015-11-24.
 
 # SYNOPSIS
 
-    use Dist::Iller::Config::Author::Csson;
+    # in iller.yaml
+    + config: Author::CSSON
 
 # DESCRIPTION
 
-Dist::Iller::Config::Author::Csson is ...
-
-# SEE ALSO
+Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/Dist::Iller) configuration. The plugin list is in `share/author-csson.yaml`.
 
 # SOURCE
 
