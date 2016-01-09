@@ -11,8 +11,10 @@ header:
 prereqs:
   runtime:
     requires:
+      - perl: 5.014000
       - Path::Tiny
       - Dist::Iller
+      - Dist::Iller::Standard
       - Moose: 2.00
   test:
     requires:
@@ -52,7 +54,7 @@ plugins:
  - +plugin: NextVersion::Semantic
    major: ~
    minor: 'API Changes, New Features, Enhancements'
-   revision: 'Requirements, Testing, Revision, Bug Fixes, Documentation, Meta'
+   revision: 'Requirements, Testing, Bug Fixes, Documentation, Other Changes'
    format: '%d.%02d%02d'
    numify_version: 0
 
@@ -138,9 +140,14 @@ plugins:
 
  - +plugin: UploadToCPAN
 
+ - +plugin: InstallRelease
+   install_command: cpanm .
+
+ - +plugin: Clean
+
  - +plugin: TravisYML
    +before: Git::Tag
-   perl_version: 5.20
+   perl_version: 5.20 5.22
 
  - +plugin: Git::Tag
    tag_format: '%v'
