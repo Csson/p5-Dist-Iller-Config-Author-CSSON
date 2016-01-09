@@ -89,7 +89,7 @@ __END__
 =head1 SYNOPSIS
 
     # in iller.yaml
-    + config: Author::CSSON
+    +config: Author::CSSON
 
 =head1 DESCRIPTION
 
