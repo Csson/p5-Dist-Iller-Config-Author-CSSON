@@ -1,10 +1,11 @@
 use Dist::Iller::Standard;
 
-# VERSION:
 # PODCLASSNAME
 # ABSTRACT: Dist::Iller config for Csson
 
 class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Config {
+
+    # VERSION
 
     use Path::Tiny;
 
@@ -42,6 +43,11 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         isa => Int,
         default => 0,
     );
+    has travis => (
+        is => 'rw',
+        isa => Int,
+        default => 1,
+    );
 
     method _build_homepage {
         return sprintf 'https://metacpan.org/release/' . $self->distribution_name;
@@ -55,7 +61,7 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
         return !$ENV{'FAKE_RELEASE'} && $self->is_private ? 1 : 0;
     }
     method is_cpan_release {
-        return !$ENV{'FAKE_RELEASE'} && $self->is_private ? 0 : 1;
+        return $ENV{'FAKE_RELEASE'} || $self->is_private ? 0 : 1;
     }
     method add_default_github {
         # check git config
