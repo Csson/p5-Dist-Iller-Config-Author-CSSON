@@ -14,7 +14,7 @@ prereqs:
       - perl: 5.014000
       - Path::Tiny
       - Dist::Iller: 0.1203
-      - Dist::Iller::Standard
+      - Dist::Iller::Standard: 0.1203
       - Moose: 2.00
   test:
     requires:
