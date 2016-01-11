@@ -5,7 +5,7 @@ header:
   author: Erik Carlsson <info@code301.com>
   license: Perl_5
   copyright_holder: Erik Carlsson
-  copyright_year: 2015
+  copyright_year: 2016
   name: Dist-Iller-Config-Author-CSSON
 
 prereqs:
@@ -16,6 +16,7 @@ prereqs:
       - Dist::Iller: 0.1203
       - Dist::Iller::Standard: 0.1203
       - Moose: 2.00
+      - MooseX::AttributeDocumented
   test:
     requires:
       - Test::More: 0.96
@@ -212,3 +213,8 @@ plugins:
  - +plugin: List
    +base: -Transformer
    transformer: List
+
+ - +plugin: Splint
+   +base: -Transformer
+   +in: Elemental
+   transformer: Splint

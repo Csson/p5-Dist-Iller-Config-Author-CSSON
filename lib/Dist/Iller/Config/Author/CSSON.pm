@@ -8,50 +8,64 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
     # VERSION
 
     use Path::Tiny;
+    use MooseX::AttributeDocumented;
 
     has filepath => (
         is => 'ro',
         isa => Path,
         default => 'author-csson.yaml',
         coerce => 1,
+        documentation => q{Path to the plugin configuration file, relative to the installed share dir location.},
     );
     has is_task => (
         is => 'ro',
         isa => Bool,
         default => 0,
+        documentation => q{If set to a true value it will include [TaskWeaver] instead of [PodWeaver].},
     );
     has installer => (
         is => 'rw',
         isa => Str,
         lazy => 1,
         default => 'MakeMaker',
+        documentation => q{The installer plugin to be used.},
     );
     has is_private => (
         is => 'rw',
         isa => Int,
         lazy => 1,
         default => 0,
+        documentation_alts => {
+            0 => q{Include [UploadToCPAN] and [GithubMeta].},
+            1 => q{Include [UploadToStratopan].},
+        }
     );
     has homepage => (
         is => 'rw',
         isa => Str,
         lazy => 1,
-        builder => 1,
+        default => sub { sprintf 'https://metacpan.org/release/' . shift->distribution_name },
+        documentation_default => q{https://metacpan.org/release/[distribution_name]},
+        documentation => q{URL to the distribution's homepage.},
     );
     has splint => (
         is => 'rw',
         isa => Int,
         default => 0,
+        documentation_alts => {
+            0 => q{Exclude Pod::Elemental::Transformer::Splint from weaver.ini},
+            1 => q{Include Pod::Elemental::Transformer::Splint in weaver.ini},
+        }
     );
     has travis => (
         is => 'rw',
         isa => Int,
         default => 1,
+        documentation_alts => {
+            0 => q{Exclude [TravisYML].},
+            1 => q{Include [TravisYML]. By default it tests 5.14+},
+        },
     );
-
-    method _build_homepage {
-        return sprintf 'https://metacpan.org/release/' . $self->distribution_name;
-    }
 
     method build_file {
         return $self->installer =~ m/MakeMaker/ ? 'Makefile.PL' : 'Build.PL';
@@ -86,13 +100,26 @@ __END__
 
 =pod
 
+:splint classname Dist::Iller::Config::Author::CSSON
+
 =head1 SYNOPSIS
 
     # in iller.yaml
     +config: Author::CSSON
+    splint: 1
 
 =head1 DESCRIPTION
 
 Dist::Iller::Config::Author::Csson is a L<Dist::Iller> configuration. The plugin list is in C<share/author-csson.yaml>.
+
+=head1 Attributes
+
+:splint attributes
+
+=head1 ENVIRONMENT VARIABLES
+
+=head2 FAKE_RELEASE
+
+If set to a true value this will include [FakeRelease] and remove either [UploadToCPAN] or [UploadToStratopan].
 
 =cut

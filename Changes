@@ -1,4 +1,40 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
-     - Initial release
+ [API Changes]
+
+ [Bug Fixes]
+
+ [Documentation]
+  - Documentation for attributes (with Pod::Elemental::Transformer::Splint).
+
+ [Enhancements]
+
+ [New Features]
+
+ [Other Changes]
+  - Changed copyright_year in author-csson.yaml to 2016.
+
+ [Requirements]
+  - New runtime prereq: MooseX::AttributeDocumented
+  - New runtime prereq: Pod::Elemental::Transformer::Splint
+
+ [Testing]
+
+0.0101 2016-01-09T22:25:48Z UTC
+ [Bug Fixes]
+ - Fixed bug where FAKE_RELEASE=1 would still release to CPAN.
+
+ [Enhancements]
+ - Changed groups for [NextVersion::Semantic] slightly
+ - Added [Clean] and [InstallRelease] to dist.ini configuration
+
+ [New Features]
+ - New attribute 'travis' (defaults to true). Set to false to avoid testing
+   on Travis-ci.
+
+ [Requirements]
+ - New Dist::Zilla plugins used: D::Z::P::Clean and D::Z::P::InstallRelease
+
+0.0100 2015-11-24T14:47:35Z UTC
+ - Initial release

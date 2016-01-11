@@ -4,7 +4,7 @@
       "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.042, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.043, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -72,6 +72,7 @@
             "Dist::Zilla::Plugin::TravisYML" : "0",
             "Dist::Zilla::Plugin::UploadToCPAN" : "0",
             "Pod::Elemental::Transformer::List" : "0",
+            "Pod::Elemental::Transformer::Splint" : "0",
             "Pod::Weaver::Plugin::SingleEncoding" : "0",
             "Pod::Weaver::Plugin::Transformer" : "0",
             "Pod::Weaver::PluginBundle::CorePrep" : "0",
@@ -94,6 +95,7 @@
             "Dist::Iller" : "0.1203",
             "Dist::Iller::Standard" : "0.1203",
             "Moose" : "2.00",
+            "MooseX::AttributeDocumented" : "0",
             "Path::Tiny" : "0",
             "perl" : "5.014000"
          }
@@ -107,7 +109,7 @@
    "provides" : {
       "Dist::Iller::Config::Author::CSSON" : {
          "file" : "lib/Dist/Iller/Config/Author/CSSON.pm",
-         "version" : "0.0101"
+         "version" : "0.0102"
       }
    },
    "release_status" : "stable",
@@ -122,6 +124,6 @@
          "web" : "https://github.com/Csson/p5-Dist-Iller-Config-Author-CSSON"
       }
    },
-   "version" : "0.0101"
+   "version" : "0.0102"
 }
 
