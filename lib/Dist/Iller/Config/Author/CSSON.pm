@@ -1,7 +1,7 @@
 use Dist::Iller::Standard;
 
 # PODCLASSNAME
-# ABSTRACT: Dist::Iller config for Csson
+# ABSTRACT: Dist::Iller config
 
 class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Config {
 

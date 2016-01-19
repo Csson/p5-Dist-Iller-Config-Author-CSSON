@@ -1,6 +1,6 @@
 # NAME
 
-Dist::Iller::Config::Author::CSSON - Dist::Iller config for Csson
+Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
 # VERSION
 
