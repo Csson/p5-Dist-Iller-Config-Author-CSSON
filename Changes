@@ -6,20 +6,29 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Bug Fixes]
 
  [Documentation]
-  - Documentation for attributes (with Pod::Elemental::Transformer::Splint).
 
  [Enhancements]
+  - Added coverage badge.
 
  [New Features]
 
  [Other Changes]
-  - Changed copyright_year in author-csson.yaml to 2016.
+  - Actually change copyright_year to 2016.
 
  [Requirements]
-  - New runtime prereq: MooseX::AttributeDocumented
-  - New runtime prereq: Pod::Elemental::Transformer::Splint
 
  [Testing]
+
+0.0102 2016-01-11T14:57:03Z UTC
+ [Documentation]
+ - Documentation for attributes (with Pod::Elemental::Transformer::Splint).
+
+ [Other Changes]
+ - Changed copyright_year in author-csson.yaml to 2016.
+
+ [Requirements]
+ - New runtime prereq: MooseX::AttributeDocumented
+ - New runtime prereq: Pod::Elemental::Transformer::Splint
 
 0.0101 2016-01-09T22:25:48Z UTC
  [Bug Fixes]
@@ -38,3 +47,4 @@ Revision history for Dist-Iller-Config-Author-Csson
 
 0.0100 2015-11-24T14:47:35Z UTC
  - Initial release
+
