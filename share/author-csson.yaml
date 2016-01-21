@@ -119,7 +119,6 @@ plugins:
  - +plugin: PodSyntaxTests
  - +plugin: MetaYAML
  - +plugin: License
- - +plugin: CheckExtraTests
  - +plugin: RunExtraTests
 
  - +plugin: ShareDir
