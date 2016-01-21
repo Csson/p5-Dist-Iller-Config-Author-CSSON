@@ -1,3 +1,5 @@
+use 5.14.0;
+use warnings;
 use Dist::Iller::Standard;
 
 # PODCLASSNAME
