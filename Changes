@@ -8,16 +8,23 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
-  - Added coverage badge.
 
  [New Features]
 
  [Other Changes]
-  - Actually change copyright_year to 2016.
+  - Remove [CheckExtraTests] from config.
+  - Specify perl version in .pm and use warnings (kwalitee fix).
 
  [Requirements]
 
  [Testing]
+
+0.0103 2016-01-19T20:42:16Z UTC
+ [Enhancements]
+ - Added coverage badge.
+
+ [Other Changes]
+ - Actually change copyright_year to 2016.
 
 0.0102 2016-01-11T14:57:03Z UTC
  [Documentation]
