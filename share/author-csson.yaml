@@ -114,6 +114,8 @@ plugins:
  - +plugin: Test::Version
    +add_if: $env.illerat
 
+ - +plugin: Test::Compile
+
  - +plugin: Test::ReportPrereqs
 
  - +plugin: PodSyntaxTests
