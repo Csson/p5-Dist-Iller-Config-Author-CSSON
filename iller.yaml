@@ -119,10 +119,11 @@ plugins:
  - +plugin: Test::Version
    +add_if: $env.illerat
 
+ - +plugin: Test::Compile
  - +plugin: PodSyntaxTests
  - +plugin: MetaYAML
  - +plugin: License
- - +plugin: ExtraTests
+ - +plugin: RunExtraTests
 
  - +plugin: ShareDir
  - +plugin: ExecDir
