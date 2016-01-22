@@ -8,16 +8,22 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
+  - Add [Test::Compile].
+  - For this dist: [RunExtraTests] instead of [ExtraTests].
 
  [New Features]
+  - Add ::MapMetro config.
 
  [Other Changes]
-  - Remove [CheckExtraTests] from config.
-  - Specify perl version in .pm and use warnings (kwalitee fix).
 
  [Requirements]
 
  [Testing]
+
+0.0104 2016-01-21T14:50:11Z UTC
+ [Other Changes]
+ - Remove [CheckExtraTests] from config.
+ - Specify perl version in .pm and use warnings (kwalitee fix).
 
 0.0103 2016-01-19T20:42:16Z UTC
  [Enhancements]
@@ -54,4 +60,3 @@ Revision history for Dist-Iller-Config-Author-Csson
 
 0.0100 2015-11-24T14:47:35Z UTC
  - Initial release
-

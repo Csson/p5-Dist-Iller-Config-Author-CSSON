@@ -4,7 +4,7 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
 # VERSION
 
-Version 0.0104, released 2016-01-21.
+Version 0.0105, released 2016-01-22.
 
 # SYNOPSIS
 
@@ -109,6 +109,18 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
 <p></p>
 
 ## distribution\_name
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Str">Str</a></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional</td>
+    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
+</tr>
+</table>
+
+<p></p>
+
+## main\_module
 
 <table cellpadding="0" cellspacing="0">
 <tr>
