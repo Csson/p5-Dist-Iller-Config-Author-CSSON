@@ -8,10 +8,12 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
+  - ::MapMetro should require Map::Metro instead of Map::Metro::Plugin::Map.
+  - ::MapMetro should add namespace::autoclean as a runtime dependency.
 
  [New Features]
 
- [Other Changes]
+ [Config changes]
 
  [Requirements]
 

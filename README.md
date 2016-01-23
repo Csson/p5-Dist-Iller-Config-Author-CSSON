@@ -6,7 +6,7 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
 # VERSION
 
-Version 0.0106, released 2016-01-23.
+Version 0.0200, released 2016-01-23.
 
 # SYNOPSIS
 
