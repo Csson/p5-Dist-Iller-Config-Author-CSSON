@@ -8,12 +8,16 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
+  - Use itself to generate dist.ini & weaver.ini (instead of maintaining a separate iller.yaml).
 
  [New Features]
 
  [Other Changes]
+  - Add itself as a develop requirement upon use in an iller.yaml.
+  - Not a Moops class anymore.
 
  [Requirements]
+  - Add missing (since 0.0105) prereqs: Types::Path::Tiny, namespace::autoclean.
 
  [Testing]
 

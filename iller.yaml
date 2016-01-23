@@ -2,219 +2,27 @@
 doctype: dist
 
 header:
-  author: Erik Carlsson <info@code301.com>
-  license: Perl_5
-  copyright_holder: Erik Carlsson
-  copyright_year: 2016
   name: Dist-Iller-Config-Author-CSSON
 
 prereqs:
   runtime:
     requires:
-      - perl: 5.014000
+      - perl: 5.012000
       - Path::Tiny
       - Dist::Iller: 0.1204
-      - Moose: 2.00
+      - Moose: 2.0000
       - MooseX::AttributeDocumented
-  test:
-    requires:
-      - Test::More: 0.96
-
-  develop:
-    requires:
-      - Test::Warnings
-      - Pod::Elemental::Transformer::List
+      - Types::Path::Tiny
+      - Types::Standard
+      - namespace::autoclean
 
 plugins:
- - +plugin: Git::GatherDir
-   exclude_filename:
-   - META.json
-   - LICENSE
-   - README.md
-   - Build.PL
-
- - +plugin: CopyFilesFromBuild
-   copy:
-   - META.json
-   - LICENSE
-   - Build.PL
-
- - +plugin: ReversionOnRelease
-   prompt: 1
-
- - +plugin: OurPkgVersion
-
- - +plugin: PodnameFromClassname
-
- - +plugin: NextRelease
-   format: '%v  %{yyyy-MM-dd HH:mm:ss VVV}d'
-
- - +plugin: PreviousVersion::Changelog
-
- - +plugin: NextVersion::Semantic
-   major: ~
-   minor: 'API Changes, New Features, Enhancements'
-   revision: 'Requirements, Testing, Bug Fixes, Documentation, Other Changes'
-   format: '%d.%02d%02d'
-   numify_version: 0
-
- - +plugin: PodWeaver
-
- - +plugin: Git::Check
-   allow_dirty:
-   - dist.ini
-   - Changes
-   - META.json
-   - README.md
-   - README
-   - Build.PL
-
- - +plugin: GithubMeta
-   issues: 1
-   homepage: http://metacpan.org/release/Dist-Iller-Config-Author-CSSON
-
- - +plugin: Readme
-
- - +plugin: ReadmeAnyFromPod
-   filename: README.md
-   type: markdown
-   location: root
-
- - +plugin: MetaNoIndex
-   directory: 
-   - t 
-   - xt 
-   - inc 
-   - share 
-   - eg 
-   - examples
-
- - +plugin: Prereqs::FromCPANfile
-
- - +plugin: Prereqs::Plugins
-
- - +plugin: MakeMaker
-
- - +plugin: MetaJSON
-
- - +plugin: MetaProvides::Class
-
- - +plugin: MetaProvides::Package
-
- - +plugin: Git::Contributors
-
- - +plugin: Test::Kwalitee::Extra
-   +add_if: $env.illerat
-
- - +plugin: Test::NoTabs
-   +add_if: $env.illerat
-
- - +plugin: Test::EOL
-   +add_if: $env.illerat
-
- - +plugin: Test::EOF
-   +add_if: $env.illerat
-
- - +plugin: Test::Version
-   +add_if: $env.illerat
-
- - +plugin: Test::Compile
- - +plugin: PodSyntaxTests
- - +plugin: MetaYAML
- - +plugin: License
- - +plugin: RunExtraTests
-
- - +plugin: ShareDir
- - +plugin: ExecDir
-
- - +plugin: Manifest
- - +plugin: ManifestSkip
-
- - +plugin: CheckChangesHasContent
-
- - +plugin: TestRelease
-
- - +plugin: ConfirmRelease
-
- - +plugin: FakeRelease
-   +add_if: $env.fake_release
-
- - +plugin: UploadToCPAN
-
- - +plugin: InstallRelease
-   install_command: cpanm .
-
- - +plugin: Clean
-
- - +plugin: TravisYML
-   +before: Git::Tag
-   perl_version: 5.20 5.22
-
- - +plugin: Git::Tag
-   tag_format: '%v'
-   tag_message: ~
-
- - +plugin: Git::Push
-   remotes_must_exist: 1
+ - +config: Author::CSSON
 
 ---
 
 doctype: weaver
 
 plugins:
- - +plugin: '@CorePrep'
-
- - +plugin: -SingleEncoding
-
- - +plugin: Name
-
- - +plugin: Version
-   format: Version %v, released %{YYYY-MM-dd}d.
-
- - +plugin: prelude
-   +base:  Region
-
- - +plugin: Synopsis
-   +base:  Generic
-
- - +plugin: Description
-   +base:  Generic
-
- - +plugin: Overview
-   +base:  Generic
-
- - +plugin: Attributes
-   +base:  Collect
-   command: attr
-
- - +plugin: Methods
-   +base:  Collect
-   command: method
-
- - +plugin: Functions
-   +base:  Collect
-   command: func
-
- - +plugin: Leftovers
-
- - +plugin: postlude
-   +base:  Region
-
- - +plugin: Source::DefaultGitHub
-   text: L<%s>
-
- - +plugin: Homepage::DefaultCPAN
-   text: L<%s>
-
- - +plugin: Authors
-
- - +plugin: Legal
-
- - +plugin: List
-   +base: -Transformer
-   transformer: List
-
- - +plugin: Splint
-   +base: -Transformer
-   +in: Elemental
-   transformer: Splint
+ - +config: Author::CSSON
+   splint: 1
