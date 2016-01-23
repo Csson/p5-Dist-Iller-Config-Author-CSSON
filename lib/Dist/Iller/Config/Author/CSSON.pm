@@ -1,15 +1,15 @@
-use 5.14.0;
+use 5.12.0;
 use warnings;
-use Dist::Iller::Standard;
 
-# PODCLASSNAME
-# ABSTRACT: Dist::Iller config
-
-class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Config {
+package Dist::Iller::Config::Author::CSSON {
 
     # VERSION
+    # ABSTRACT: Dist::Iller config
 
+    use Moose;
     use Path::Tiny;
+    use Types::Path::Tiny qw/Path/;
+    use Types::Standard qw/Bool Str Int/;
     use MooseX::AttributeDocumented;
 
     has filepath => (
@@ -68,18 +68,23 @@ class Dist::Iller::Config::Author::CSSON using Moose with Dist::Iller::Role::Con
             1 => q{Include [TravisYML]. By default it tests 5.14+},
         },
     );
+    with 'Dist::Iller::Role::Config';
 
-    method build_file {
+    sub build_file {
+        my $self = shift;
         return $self->installer =~ m/MakeMaker/ ? 'Makefile.PL' : 'Build.PL';
     }
 
-    method is_private_release {
+    sub is_private_release {
+        my $self = shift;
         return !$ENV{'FAKE_RELEASE'} && $self->is_private ? 1 : 0;
     }
-    method is_cpan_release {
+    sub is_cpan_release {
+        my $self = shift;
         return $ENV{'FAKE_RELEASE'} || $self->is_private ? 0 : 1;
     }
-    method add_default_github {
+    sub add_default_github {
+        my $self = shift;
         # check git config
         my $add_default_github = 0;
         my $git_config = path('.git/config');

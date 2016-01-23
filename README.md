@@ -2,9 +2,11 @@
 
 Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
+![Requires Perl 5.12+](https://img.shields.io/badge/perl-5.12+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) ![coverage 40.9%](https://img.shields.io/badge/coverage-40.9%-red.svg)
+
 # VERSION
 
-Version 0.0105, released 2016-01-22.
+Version 0.0106, released 2016-01-23.
 
 # SYNOPSIS
 
@@ -144,7 +146,7 @@ If set to a true value this will include \[FakeRelease\] and remove either \[Upl
 
 # HOMEPAGE
 
-[http://metacpan.org/release/Dist-Iller-Config-Author-CSSON](http://metacpan.org/release/Dist-Iller-Config-Author-CSSON)
+[https://metacpan.org/release/Dist-Iller-Config-Author-CSSON](https://metacpan.org/release/Dist-Iller-Config-Author-CSSON)
 
 # AUTHOR
 
