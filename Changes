@@ -15,7 +15,9 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Requirements]
 
- [Testing]
+ [Config Changes]
+  - Remove env variable ILLERAT for including some test plugins (now they are always there).
+  - Add Test::NoTabs as a develop prereq.
 
 0.0107 2016-01-23T22:09:06Z UTC
  [Enhancements]
