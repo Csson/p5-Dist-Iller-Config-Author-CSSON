@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.012000;
+use 5.010001;
 
 use ExtUtils::MakeMaker;
 
@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Dist-Iller-Config-Author-CSSON",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.012000",
+  "MIN_PERL_VERSION" => "5.010001",
   "NAME" => "Dist::Iller::Config::Author::CSSON",
   "PREREQ_PM" => {
     "Dist::Iller" => "0.1204",
@@ -39,7 +39,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => "0.96"
   },
-  "VERSION" => "0.0200",
+  "VERSION" => "0.0201",
   "test" => {
     "TESTS" => "t/*.t"
   }
