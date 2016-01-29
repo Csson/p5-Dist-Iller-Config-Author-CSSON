@@ -1,31 +1,33 @@
-use 5.14.0;
+use 5.10.1;
+use strict;
 use warnings;
 
-package Dist::Iller::Config::Author::CSSON::MapMetro {
+package Dist::Iller::Config::Author::CSSON::MapMetro;
 
-    use Moose;
-    use Types::Path::Tiny qw/Path/;
-    use namespace::autoclean;
+use Moose;
+use Types::Path::Tiny qw/Path/;
+use namespace::autoclean;
 
-    # ABSTRACT: Dist::Iller config for Map::Metro
-    # VERSION
+# ABSTRACT: Dist::Iller config for Map::Metro
+# VERSION
 
-    has filepath => (
-        is => 'ro',
-        isa => Path,
-        default => 'author-csson-mapmetro.yaml',
-        coerce => 1,
-        documentation => q{Path to the plugin configuration file, relative to the installed share dir location.},
-    );
-    with 'Dist::Iller::Role::Config';
-    has '+main_module' => (
-        default => 'Dist::Iller::Config::Author::CSSON',
-    );
+has filepath => (
+    is => 'ro',
+    isa => Path,
+    default => 'author-csson-mapmetro.yaml',
+    coerce => 1,
+    documentation => q{Path to the plugin configuration file, relative to the installed share dir location.},
+);
+with 'Dist::Iller::Role::Config';
+has '+main_module' => (
+    default => 'Dist::Iller::Config::Author::CSSON',
+);
 
-    __PACKAGE__->meta->make_immutable;
-}
+__PACKAGE__->meta->make_immutable;
 
 1;
+
+__END__
 
 =pod
 

@@ -2,11 +2,11 @@
 
 Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
-![Requires Perl 5.12+](https://img.shields.io/badge/perl-5.12+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) ![coverage 40.9%](https://img.shields.io/badge/coverage-40.9%-red.svg)
+![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) ![coverage 47.3%](https://img.shields.io/badge/coverage-47.3%-red.svg)
 
 # VERSION
 
-Version 0.0200, released 2016-01-26.
+Version 0.0201, released 2016-01-29.
 
 # SYNOPSIS
 
@@ -18,7 +18,45 @@ Version 0.0200, released 2016-01-26.
 
 Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/Dist::Iller) configuration. The plugin list is in `share/author-csson.yaml`.
 
-# Attributes
+# ATTRIBUTES
+
+## travis
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Int">Int</a></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>1</code></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">read/write</td>
+    <td style="text-align: right; padding-right: 6px; padding-left: 6px;"><code>1</code>:</td>
+    <td style="padding-left: 12px;">Include [TravisYML]. By default it tests 5.14+</td>
+</tr>
+</table>
+
+<p></p>
+
+## travis\_perl\_min
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Int">Int</a></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>10</code></td>
+    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
+</tr>
+</table>
+
+<p>Minimum Perl version to test on Travis. All production releases up to (and including) 'travis_perl_max' are automatically included. Only give the minor version number (eg '14' for Perl 5.14).</p>
+
+## travis\_perl\_max
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Int">Int</a></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>22</code></td>
+    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
+</tr>
+</table>
+
+<p>Maximum Perl version to test on Travis. See 'travis_perl_min'.</p>
 
 ## filepath
 
@@ -91,20 +129,6 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
     <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">read/write</td>
     <td style="text-align: right; padding-right: 6px; padding-left: 6px;"><code>1</code>:</td>
     <td style="padding-left: 12px;">Include Pod::Elemental::Transformer::Splint in weaver.ini</td>
-</tr>
-</table>
-
-<p></p>
-
-## travis
-
-<table cellpadding="0" cellspacing="0">
-<tr>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Int">Int</a></td>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>1</code></td>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">read/write</td>
-    <td style="text-align: right; padding-right: 6px; padding-left: 6px;"><code>1</code>:</td>
-    <td style="padding-left: 12px;">Include [TravisYML]. By default it tests 5.14+</td>
 </tr>
 </table>
 
