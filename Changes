@@ -10,14 +10,21 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Enhancements]
 
  [New Features]
-  - Two new attributes: travis_perl_min and travis_perl_max for easier setting of version interval to test.
 
  [Other Changes]
 
  [Requirements]
-  - No longer uses block package syntax, so should now work on 5.10+ (once Dist::Iller does).
 
  [Testing]
+
+0.0201 2016-01-29T15:43:46Z UTC
+ [New Features]
+ - Two new attributes: travis_perl_min and travis_perl_max for easier
+   setting of version interval to test.
+
+ [Requirements]
+ - No longer uses block package syntax, so should now work on 5.10+ (once
+   Dist::Iller does).
 
 0.0200 2016-01-26T22:59:24Z UTC
  [Config Changes]
