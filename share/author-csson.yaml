@@ -227,4 +227,5 @@ plugins:
    +base: -Transformer
    +in: Elemental
    +add_if: $self.splint
+   +version: 0.1201
    transformer: Splint

@@ -6,7 +6,7 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
 # VERSION
 
-Version 0.0202, released 2016-01-29.
+Version 0.0202, released 2016-02-03.
 
 # SYNOPSIS
 
@@ -28,7 +28,7 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
     <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>1</code></td>
     <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">read/write</td>
     <td style="text-align: right; padding-right: 6px; padding-left: 6px;"><code>1</code>:</td>
-    <td style="padding-left: 12px;">Include [TravisYML]. By default it tests 5.14+</td>
+    <td style="padding-left: 12px;">Include [TravisYML].</td>
 </tr>
 </table>
 

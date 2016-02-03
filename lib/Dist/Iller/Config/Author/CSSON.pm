@@ -68,7 +68,7 @@ has travis => (
     documentation_order => 100,
     documentation_alts => {
         0 => q{Exclude [TravisYML].},
-        1 => q{Include [TravisYML]. By default it tests 5.14+},
+        1 => q{Include [TravisYML].},
     },
 );
 has travis_perl_min => (

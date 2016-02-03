@@ -14,6 +14,8 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Other Changes]
 
  [Requirements]
+  - Bump Dist::Iller to 0.1301 (for +version).
+  - When using Pod::Elemental::Transformer::Splint, require 0.1201 (for 5.10 compatibility).
 
  [Testing]
 
