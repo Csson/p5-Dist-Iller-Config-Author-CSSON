@@ -14,6 +14,7 @@ prereqs:
 
   develop:
     requires:
+      - Dist::Iller: 0.1301
       - Dist::Iller::Config::Author::CSSON
       - Test::Warnings
       - Test::NoTabs
@@ -145,7 +146,6 @@ plugins:
  - +plugin: TravisYML
    +add_if: $self.travis
    perl_version: $self.travis_perl
-   test_authordeps: 1
 
  - +plugin: Git::Tag
    tag_format: '%v'
