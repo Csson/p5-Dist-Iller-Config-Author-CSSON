@@ -145,6 +145,7 @@ plugins:
  - +plugin: TravisYML
    +add_if: $self.travis
    perl_version: $self.travis_perl
+   test_authordeps: 1
 
  - +plugin: Git::Tag
    tag_format: '%v'
