@@ -18,7 +18,6 @@ prereqs:
 
 plugins:
  - +config: Author::CSSON
-   travis_perl_min: 14
 
 ---
 
