@@ -35,6 +35,7 @@
             "Dist::Iller" : "0.1401",
             "Dist::Iller::Config::Author::CSSON" : "0.0300",
             "Dist::Zilla::Plugin::BumpVersionAfterRelease" : "0",
+            "Dist::Zilla::Plugin::Changelog::Grouped" : "0",
             "Dist::Zilla::Plugin::CheckChangesHasContent" : "0",
             "Dist::Zilla::Plugin::Clean" : "0",
             "Dist::Zilla::Plugin::ConfirmRelease" : "0",
@@ -129,11 +130,11 @@
    "provides" : {
       "Dist::Iller::Config::Author::CSSON" : {
          "file" : "lib/Dist/Iller/Config/Author/CSSON.pm",
-         "version" : "0.0300"
+         "version" : "0.0301"
       },
       "Dist::Iller::Config::Author::CSSON::MapMetro" : {
          "file" : "lib/Dist/Iller/Config/Author/CSSON/MapMetro.pm",
-         "version" : "0.0300"
+         "version" : "0.0301"
       }
    },
    "release_status" : "stable",
@@ -148,6 +149,6 @@
          "web" : "https://github.com/Csson/p5-Dist-Iller-Config-Author-CSSON"
       }
    },
-   "version" : "0.0300"
+   "version" : "0.0301"
 }
 
