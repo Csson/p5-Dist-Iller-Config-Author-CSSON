@@ -8,16 +8,23 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
+  - Become compatible with Dist::Iller 0.1400+.
 
  [New Features]
 
- [Other Changes]
+ [Config Changes]
+  - dist.ini: Added [RewriteVersion] and [BumpVersionAfterRelease].
+  - dist.ini: Removed [ReversionOnRelease], [OurPkgVersion], [PreviousVersion::Changelog] and [NextVersion::Semantic].
 
  [Requirements]
-  - Bump Dist::Iller to 0.1301 (for +version).
-  - When using Pod::Elemental::Transformer::Splint, require 0.1201 (for 5.10 compatibility).
 
  [Testing]
+
+0.0202 2016-02-03T17:29:13Z UTC
+ [Requirements]
+ - Bump Dist::Iller to 0.1301 (for +version).
+ - When using Pod::Elemental::Transformer::Splint, require 0.1201 (for 5.10
+   compatibility).
 
 0.0201 2016-01-29T15:43:46Z UTC
  [New Features]

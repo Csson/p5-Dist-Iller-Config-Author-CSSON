@@ -14,8 +14,6 @@ prereqs:
 
   develop:
     requires:
-      - Dist::Iller: 0.1301
-      - Dist::Iller::Config::Author::CSSON
       - Test::Warnings
       - Test::NoTabs
 
@@ -33,24 +31,12 @@ plugins:
    - LICENSE
    - $self.build_file
 
- - +plugin: ReversionOnRelease
-   prompt: 1
-
- - +plugin: OurPkgVersion
+ - +plugin: RewriteVersion
 
  - +plugin: PodnameFromClassname
 
  - +plugin: NextRelease
    format: '%v  %{yyyy-MM-dd HH:mm:ss VVV}d'
-
- - +plugin: PreviousVersion::Changelog
-
- - +plugin: NextVersion::Semantic
-   major: ~
-   minor: 'API Changes, New Features, Enhancements'
-   revision: 'Requirements, Testing, Other Changes, Bug Fixes, Documentation'
-   format: '%d.%02d%02d'
-   numify_version: 0
 
  - +plugin: TaskWeaver
    +add_if: $self.is_task
@@ -156,6 +142,8 @@ plugins:
 
  - +plugin: InstallRelease
    install_command: cpanm .
+
+ - +plugin: BumpVersionAfterRelease
 
  - +plugin: Clean
 

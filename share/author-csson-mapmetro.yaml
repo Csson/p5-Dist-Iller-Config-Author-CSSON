@@ -17,6 +17,7 @@ prereqs:
 
 plugins:
   - +config: Author::CSSON
+    homepage: $self.homepage
 
   - +extend_plugin: Git::GatherDir
     exclude_match:

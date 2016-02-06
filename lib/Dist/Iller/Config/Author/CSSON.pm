@@ -4,8 +4,8 @@ use warnings;
 
 package Dist::Iller::Config::Author::CSSON;
 
-# VERSION
 # ABSTRACT: Dist::Iller config
+our $VERSION = '0.0300';
 
 use Moose;
 use namespace::autoclean;
@@ -48,7 +48,10 @@ has homepage => (
     is => 'rw',
     isa => Str,
     lazy => 1,
-    default => sub { sprintf 'https://metacpan.org/release/' . shift->distribution_name },
+    default => sub {
+        my $self = shift;
+        $self->has_distribution_name ? sprintf 'https://metacpan.org/release/%s', $self->distribution_name : undef;
+    },
     documentation_default => q{https://metacpan.org/release/[distribution_name]},
     documentation => q{URL to the distribution's homepage.},
 );
@@ -89,7 +92,7 @@ has travis_perl_max => (
 );
 
 
-with 'Dist::Iller::Role::Config';
+with 'Dist::Iller::Config';
 
 sub build_file {
     my $self = shift;

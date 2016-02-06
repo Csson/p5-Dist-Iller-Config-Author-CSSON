@@ -6,10 +6,11 @@ package Dist::Iller::Config::Author::CSSON::MapMetro;
 
 use Moose;
 use Types::Path::Tiny qw/Path/;
+use Types::Standard qw/Str/;
 use namespace::autoclean;
 
 # ABSTRACT: Dist::Iller config for Map::Metro
-# VERSION
+our $VERSION = '0.0300';
 
 has filepath => (
     is => 'ro',
@@ -18,7 +19,16 @@ has filepath => (
     coerce => 1,
     documentation => q{Path to the plugin configuration file, relative to the installed share dir location.},
 );
-with 'Dist::Iller::Role::Config';
+has homepage => (
+    is => 'rw',
+    isa => Str,
+    lazy => 1,
+    default => sub {
+        my $self = shift;
+        $self->has_distribution_name ? sprintf 'https://metacpan.org/release/%s', $self->distribution_name : undef;
+    },
+);
+with 'Dist::Iller::Config';
 has '+main_module' => (
     default => 'Dist::Iller::Config::Author::CSSON',
 );

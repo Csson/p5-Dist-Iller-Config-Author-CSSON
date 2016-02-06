@@ -2,11 +2,11 @@
 
 Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
-![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) ![coverage 42.7%](https://img.shields.io/badge/coverage-42.7%-red.svg)
+![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) 
 
 # VERSION
 
-Version 0.0202, released 2016-02-03.
+Version 0.0300, released 2016-02-06.
 
 # SYNOPSIS
 
@@ -120,6 +120,18 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
 
 <p>If set to a true value it will include [TaskWeaver] instead of [PodWeaver].</p>
 
+## main\_module
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Str">Str</a></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>The package name</code></td>
+    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
+</tr>
+</table>
+
+<p>Override this attribute when there's more than one config in a distribution. It uses the main_module's sharedir location for the config files.</p>
+
 ## splint
 
 <table cellpadding="0" cellspacing="0">
@@ -135,18 +147,6 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
 <p></p>
 
 ## distribution\_name
-
-<table cellpadding="0" cellspacing="0">
-<tr>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Str">Str</a></td>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional</td>
-    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
-</tr>
-</table>
-
-<p></p>
-
-## main\_module
 
 <table cellpadding="0" cellspacing="0">
 <tr>
