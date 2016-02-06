@@ -10,7 +10,7 @@ use Types::Standard qw/Str/;
 use namespace::autoclean;
 
 # ABSTRACT: Dist::Iller config for Map::Metro
-our $VERSION = '0.0300';
+our $VERSION = '0.0301';
 
 has filepath => (
     is => 'ro',
