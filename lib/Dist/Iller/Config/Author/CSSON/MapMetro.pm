@@ -5,7 +5,7 @@ use warnings;
 package Dist::Iller::Config::Author::CSSON::MapMetro;
 
 # ABSTRACT: Dist::Iller config for Map::Metro
-our $VERSION = '0.0302';
+our $VERSION = '0.0303';
 
 use Moose;
 extends 'Dist::Iller::Config::Author::CSSON';

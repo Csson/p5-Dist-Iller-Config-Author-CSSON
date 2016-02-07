@@ -1,17 +1,22 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [Config Changes]
-  - dist.ini: Added [Changelog::Grouped].
-  - dist.ini: Replaced [RewriteVersion] and [BumpVersionAfterRelease] with ::Transitional.
-  - dist.ini: Remove more plugins when FAKE_RELEASE=1.
 
- [Requirements]
-  - Bump Dist::Iller to 0.1402.
-  - Dist::Zilla::Plugin::PreviousVersion::Changelog is the fallback version provider for [RewriteVersion::Transitional].
+0.0302  2016-02-07 15:22:41 UTC
+ [Config Changes]
+ - dist.ini: Added [Changelog::Grouped].
+ - dist.ini: Replaced [RewriteVersion] and [BumpVersionAfterRelease] with
+   ::Transitional.
+ - dist.ini: Remove more plugins when FAKE_RELEASE=1.
 
  [Other Changes]
-  - ::MapMetro now inherits ::CSSON (so that the properties are available for the end using distribution).
+ - ::MapMetro now inherits ::CSSON (so that the properties are available
+   for the end using distribution).
+
+ [Requirements]
+ - Bump Dist::Iller to 0.1402.
+ - Dist::Zilla::Plugin::PreviousVersion::Changelog is the fallback version
+   provider for [RewriteVersion::Transitional].
 
 0.0301 Unreleased
 
@@ -111,4 +116,3 @@ Revision history for Dist-Iller-Config-Author-Csson
 
 0.0100 2015-11-24T14:47:35Z UTC
  - Initial release
-
