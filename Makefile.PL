@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.010001",
   "NAME" => "Dist::Iller::Config::Author::CSSON",
   "PREREQ_PM" => {
-    "Dist::Iller" => "0.1301",
+    "Dist::Iller" => "0.1401",
     "Moose" => "2.0000",
     "MooseX::AttributeDocumented" => 0,
     "Path::Tiny" => 0,
@@ -39,7 +39,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => "0.96"
   },
-  "VERSION" => "0.0301",
+  "VERSION" => "0.0302",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -47,7 +47,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Dist::Iller" => "0.1301",
+  "Dist::Iller" => "0.1401",
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
   "IO::Handle" => 0,

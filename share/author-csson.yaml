@@ -16,6 +16,7 @@ prereqs:
     requires:
       - Test::Warnings
       - Test::NoTabs
+      - Dist::Zilla::Plugin::PreviousVersion::Changelog
 
 plugins:
  - +plugin: Git::GatherDir
@@ -31,7 +32,12 @@ plugins:
    - LICENSE
    - $self.build_file
 
- - +plugin: RewriteVersion
+ - +plugin: RewriteVersion::Transitional
+   fallback_version_provider: PreviousVersion::Changelog
+
+ - +plugin: Changelog::Grouped
+   +remove_if: $env.fake_release
+   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation
 
  - +plugin: PodnameFromClassname
 
@@ -134,18 +140,23 @@ plugins:
    perl_version: $self.travis_perl
 
  - +plugin: Git::Tag
+   +remove_if: $env.fake_release
    tag_format: '%v'
    tag_message: ~
 
  - +plugin: Git::Push
+   +remove_if: $env.fake_release
    remotes_must_exist: 1
 
  - +plugin: InstallRelease
+   +remove_if: $env.fake_release
    install_command: cpanm .
 
- - +plugin: BumpVersionAfterRelease
+ - +plugin: BumpVersionAfterRelease::Transitional
+   +remove_if: $env.fake_release
 
  - +plugin: Clean
+   +remove_if: $env.fake_release
 
 ---
 doctype: weaver

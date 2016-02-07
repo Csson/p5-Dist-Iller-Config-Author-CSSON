@@ -4,13 +4,13 @@ use warnings;
 
 package Dist::Iller::Config::Author::CSSON::MapMetro;
 
+# ABSTRACT: Dist::Iller config for Map::Metro
+our $VERSION = '0.0302';
+
 use Moose;
 use Types::Path::Tiny qw/Path/;
 use Types::Standard qw/Str/;
 use namespace::autoclean;
-
-# ABSTRACT: Dist::Iller config for Map::Metro
-our $VERSION = '0.0301';
 
 has filepath => (
     is => 'ro',

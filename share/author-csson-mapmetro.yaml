@@ -19,6 +19,9 @@ plugins:
   - +config: Author::CSSON
     homepage: $self.homepage
 
+ - +extend_plugin: Changelog::Grouped
+   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation, Map Changes
+
   - +extend_plugin: Git::GatherDir
     exclude_match:
       - \.png

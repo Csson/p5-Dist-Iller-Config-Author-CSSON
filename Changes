@@ -1,26 +1,25 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
-
-0.0300  2016-02-06 11:16:48 UTC
- [API Changes]
-
- [Bug Fixes]
-
- [Documentation]
-
- [Enhancements]
-  - Become compatible with Dist::Iller 0.1400+.
-
- [New Features]
-
  [Config Changes]
-  - dist.ini: Added [RewriteVersion] and [BumpVersionAfterRelease].
-  - dist.ini: Removed [ReversionOnRelease], [OurPkgVersion], [PreviousVersion::Changelog] and [NextVersion::Semantic].
+  - dist.ini: Added [Changelog::Grouped].
+  - dist.ini: Replaced [RewriteVersion] and [BumpVersionAfterRelease] with ::Transitional.
+  - dist.ini: Remove more plugins when FAKE_RELEASE=1.
 
  [Requirements]
+  - Bump Dist::Iller to 0.1401.
 
- [Testing]
+0.0301 Unreleased
+ ...
+
+0.0300 2016-02-06T11:16:48Z UTC
+ [Config Changes]
+ - dist.ini: Added [RewriteVersion] and [BumpVersionAfterRelease].
+ - dist.ini: Removed [ReversionOnRelease], [OurPkgVersion],
+   [PreviousVersion::Changelog] and [NextVersion::Semantic].
+
+ [Enhancements]
+ - Become compatible with Dist::Iller 0.1400+.
 
 0.0202 2016-02-03T17:29:13Z UTC
  [Requirements]
