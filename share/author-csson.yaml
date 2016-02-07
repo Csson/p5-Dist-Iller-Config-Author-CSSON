@@ -134,7 +134,6 @@ plugins:
  - +plugin: UploadToCPAN
    +add_if: $self.is_cpan_release
 
-
  - +plugin: TravisYML
    +add_if: $self.travis
    perl_version: $self.travis_perl

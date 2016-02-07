@@ -8,27 +8,14 @@ package Dist::Iller::Config::Author::CSSON::MapMetro;
 our $VERSION = '0.0302';
 
 use Moose;
+extends 'Dist::Iller::Config::Author::CSSON';
 use Types::Path::Tiny qw/Path/;
 use Types::Standard qw/Str/;
 use namespace::autoclean;
 
-has filepath => (
-    is => 'ro',
-    isa => Path,
+has '+filepath' => (
     default => 'author-csson-mapmetro.yaml',
-    coerce => 1,
-    documentation => q{Path to the plugin configuration file, relative to the installed share dir location.},
 );
-has homepage => (
-    is => 'rw',
-    isa => Str,
-    lazy => 1,
-    default => sub {
-        my $self = shift;
-        $self->has_distribution_name ? sprintf 'https://metacpan.org/release/%s', $self->distribution_name : undef;
-    },
-);
-with 'Dist::Iller::Config';
 has '+main_module' => (
     default => 'Dist::Iller::Config::Author::CSSON',
 );

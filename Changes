@@ -7,10 +7,13 @@ Revision history for Dist-Iller-Config-Author-Csson
   - dist.ini: Remove more plugins when FAKE_RELEASE=1.
 
  [Requirements]
-  - Bump Dist::Iller to 0.1401.
+  - Bump Dist::Iller to 0.1402.
+  - Dist::Zilla::Plugin::PreviousVersion::Changelog is the fallback version provider for [RewriteVersion::Transitional].
+
+ [Other Changes]
+  - ::MapMetro now inherits ::CSSON (so that the properties are available for the end using distribution).
 
 0.0301 Unreleased
- ...
 
 0.0300 2016-02-06T11:16:48Z UTC
  [Config Changes]
