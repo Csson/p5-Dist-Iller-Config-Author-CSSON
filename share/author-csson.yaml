@@ -16,7 +16,6 @@ prereqs:
     requires:
       - Test::Warnings
       - Test::NoTabs
-      - Dist::Zilla::Plugin::PreviousVersion::Changelog
 
 plugins:
  - +plugin: Git::GatherDir
