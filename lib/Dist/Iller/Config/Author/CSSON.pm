@@ -5,7 +5,7 @@ use warnings;
 package Dist::Iller::Config::Author::CSSON;
 
 # ABSTRACT: Dist::Iller config
-our $VERSION = '0.0303';
+our $VERSION = '0.0304';
 
 use Moose;
 use namespace::autoclean;

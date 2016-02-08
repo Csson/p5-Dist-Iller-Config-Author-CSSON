@@ -1,12 +1,30 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
+ [API Changes]
+
+ [Bug Fixes]
+
+ [Documentation]
+
+ [Enhancements]
+
+ [New Features]
+
+ [Other Changes]
+
+ [Requirements]
+
+ [Testing]
+
+0.0303 2016-02-08T21:24:59Z UTC
  [Config Changes]
  - dist.ini: Remove [NextRelease].
  - dist.ini: Update name of [NextRelease::Grouped].
- - dist.ini: Remove fallback version provider for [RewriteVersion::Transitional].
+ - dist.ini: Remove fallback version provider for
+   [RewriteVersion::Transitional].
 
-0.0302  2016-02-07 15:22:41 UTC
+0.0302 2016-02-07T15:22:41Z UTC
  [Config Changes]
  - dist.ini: Added [Changelog::Grouped].
  - dist.ini: Replaced [RewriteVersion] and [BumpVersionAfterRelease] with
