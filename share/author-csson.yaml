@@ -33,16 +33,13 @@ plugins:
    - $self.build_file
 
  - +plugin: RewriteVersion::Transitional
-   fallback_version_provider: PreviousVersion::Changelog
 
- - +plugin: Changelog::Grouped
+ - +plugin: NextRelease::Grouped
    +remove_if: $env.fake_release
    groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation
+   format_date: "%{yyyy-MM-dd HH:mm:ss VVV}d"
 
  - +plugin: PodnameFromClassname
-
- - +plugin: NextRelease
-   format: '%v  %{yyyy-MM-dd HH:mm:ss VVV}d'
 
  - +plugin: TaskWeaver
    +add_if: $self.is_task

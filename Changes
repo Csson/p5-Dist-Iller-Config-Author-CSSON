@@ -1,6 +1,10 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
+ [Config Changes]
+ - dist.ini: Remove [NextRelease].
+ - dist.ini: Update name of [NextRelease::Grouped].
+ - dist.ini: Remove fallback version provider for [RewriteVersion::Transitional].
 
 0.0302  2016-02-07 15:22:41 UTC
  [Config Changes]
