@@ -33,10 +33,33 @@ plugins:
 
  - +plugin: RewriteVersion::Transitional
 
+ - +plugin: ChangeStats::Git
+   +version: 0.5.0
+   develop_branch: develop
+   release_branch: master
+   group: Stats
+   auto_previous_tag: 1
+   text: ~
+   skip_file:
+    - META.json
+    - Changes
+    - LICENSE
+    - dist.ini
+    - weaver.ini
+    - cpanfile
+    - .gitignore
+    - .travis.yml
+    - Makefile.PL
+    - README.md
+
+ - +plugin: ChangeStats::Dependencies::Git
+   group: Dependency Changes
+
  - +plugin: NextRelease::Grouped
    +remove_if: $env.fake_release
-   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation
+   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation, Stats, Dependency Changes
    format_date: "%{yyyy-MM-dd HH:mm:ss VVV}d"
+   auto_order: 0
 
  - +plugin: PodnameFromClassname
 

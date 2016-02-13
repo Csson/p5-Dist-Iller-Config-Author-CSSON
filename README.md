@@ -2,11 +2,11 @@
 
 Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
-![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) ![coverage 42.7%](https://img.shields.io/badge/coverage-42.7%-red.svg)
+![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON) 
 
 # VERSION
 
-Version 0.0303, released 2016-02-08.
+Version 0.0304, released 2016-02-13.
 
 # SYNOPSIS
 

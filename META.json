@@ -4,7 +4,7 @@
       "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.043, Dist::Iller version 0.1402, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.043, Dist::Iller version 0.1405, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -32,9 +32,11 @@
       },
       "develop" : {
          "requires" : {
-            "Dist::Iller" : "0.1402",
-            "Dist::Iller::Config::Author::CSSON" : "0.0303",
+            "Dist::Iller" : "0.1405",
+            "Dist::Iller::Config::Author::CSSON" : "0.0304",
             "Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional" : "0",
+            "Dist::Zilla::Plugin::ChangeStats::Dependencies::Git" : "0",
+            "Dist::Zilla::Plugin::ChangeStats::Git" : "v0.5.0",
             "Dist::Zilla::Plugin::CheckChangesHasContent" : "0",
             "Dist::Zilla::Plugin::Clean" : "0",
             "Dist::Zilla::Plugin::ConfirmRelease" : "0",
@@ -129,11 +131,11 @@
    "provides" : {
       "Dist::Iller::Config::Author::CSSON" : {
          "file" : "lib/Dist/Iller/Config/Author/CSSON.pm",
-         "version" : "0.0303"
+         "version" : "0.0304"
       },
       "Dist::Iller::Config::Author::CSSON::MapMetro" : {
          "file" : "lib/Dist/Iller/Config/Author/CSSON/MapMetro.pm",
-         "version" : "0.0303"
+         "version" : "0.0304"
       }
    },
    "release_status" : "stable",
@@ -148,6 +150,6 @@
          "web" : "https://github.com/Csson/p5-Dist-Iller-Config-Author-CSSON"
       }
    },
-   "version" : "0.0303"
+   "version" : "0.0304"
 }
 
