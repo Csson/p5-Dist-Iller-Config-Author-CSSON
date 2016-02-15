@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-15 13:33:21 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-15 16:29:37 UTC.
 
 on runtime => sub {
     requires 'Dist::Iller' => '0.1401';
@@ -26,7 +26,7 @@ on configure => sub {
 };
 on develop => sub {
     requires 'Dist::Iller' => '0.1405';
-    requires 'Dist::Iller::Config::Author::CSSON' => '0.0305';
+    requires 'Dist::Iller::Config::Author::CSSON' => '0.0306';
     requires 'Dist::Zilla::Plugin::Authority' => '1.009';
     requires 'Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional' => '0';
     requires 'Dist::Zilla::Plugin::ChangeStats::Dependencies::Git' => '0';
