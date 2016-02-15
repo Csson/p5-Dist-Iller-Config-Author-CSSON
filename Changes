@@ -14,11 +14,19 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Other Changes]
 
  [Requirements]
-  - Lower to 5.10.0 everywhere.
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0305 2016-02-15T13:37:13Z UTC
+ [Requirements]
+ - Lower to 5.10.0 everywhere.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 3 insertions(+), 3 deletions(-)
+ - (run req) ~ perl 5.010001 --> 5.010000
+ - (dev req) ~ Dist::Iller::Config::Author::CSSON 0.0304 --> 0.0305
 
 0.0304 2016-02-15T13:10:37Z UTC
  [Enhancements]
