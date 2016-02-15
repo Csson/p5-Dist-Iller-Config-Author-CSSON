@@ -8,8 +8,6 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
-  - Added plugins to config.
-  - Improved (hopefully) the order of some plugins.
 
  [New Features]
 
@@ -17,7 +15,25 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Requirements]
 
+ [Stats & Dependency Changes]
+
  [Testing]
+
+0.0304 2016-02-15T13:10:37Z UTC
+ [Enhancements]
+ - Added plugins to config.
+ - Improved (hopefully) the order of some plugins.
+
+ [Stats & Dependency Changes]
+ - 4 files changed, 49 insertions(+), 10 deletions(-)
+ - (dev req) + Dist::Zilla::Plugin::Authority 1.009
+ - (dev req) + Dist::Zilla::Plugin::ChangeStats::Dependencies::Git (any)
+ - (dev req) + Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch 0.013
+ - (dev req) + Dist::Zilla::Plugin::Git::Commit (any)
+ - (dev req) ~ Dist::Iller 0.1402 --> 0.1405
+ - (dev req) ~ Dist::Iller::Config::Author::CSSON 0.0303 --> 0.0304
+ - (dev req) ~ Dist::Zilla::Plugin::RewriteVersion::Transitional (any) -->
+   0.007
 
 0.0303 2016-02-08T21:24:59Z UTC
  [Config Changes]
