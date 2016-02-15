@@ -163,6 +163,11 @@ plugins:
    +add_if: $self.travis
    perl_version: $self.travis_perl
 
+ - +plugin: CommitBeforeTag
+   +base: Git::Commit
+   allow_dirty_match: .
+   commit_msg: 'Release %v%n%n%c'
+
  - +plugin: Git::Tag
    +remove_if: $env.fake_release
    tag_format: '%v'
@@ -175,10 +180,10 @@ plugins:
  - +plugin: BumpVersionAfterRelease::Transitional
    +remove_if: $env.fake_release
 
- - +plugin: Git::Commit
+ - +plugin: CommitAfterRelease
+   +base: Git::Commit
    allow_dirty_match: .
-   commit_msg: 'Release %v%n%n%c'
-
+   commit_msg: 'Bump version after %v'
 
  - +plugin: Git::Push
    +remove_if: $env.fake_release
