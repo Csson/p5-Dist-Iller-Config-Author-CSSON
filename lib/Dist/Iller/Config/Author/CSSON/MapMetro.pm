@@ -1,10 +1,11 @@
-use 5.10.1;
+use 5.10.0;
 use strict;
 use warnings;
 
 package Dist::Iller::Config::Author::CSSON::MapMetro;
 
 # ABSTRACT: Dist::Iller config for Map::Metro
+# AUTHORITY
 our $VERSION = '0.0304';
 
 use Moose;
