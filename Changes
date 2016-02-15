@@ -8,6 +8,8 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
+  - Added plugins to config.
+  - Improved (hopefully) the order of some plugins.
 
  [New Features]
 

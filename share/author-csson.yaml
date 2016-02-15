@@ -31,16 +31,18 @@ plugins:
    - LICENSE
    - $self.build_file
 
- - +plugin: RewriteVersion::Transitional
+ - +plugin: Authority
+   +version: 1.009
+   locate_comment: 1
 
- - +plugin: ChangeStats::Git
-   +version: 0.5.0
-   develop_branch: develop
-   release_branch: master
-   group: Stats
-   auto_previous_tag: 1
-   text: ~
-   skip_file:
+ - +plugin: RewriteVersion::Transitional
+   +version: 0.007
+
+ - +plugin: ChangeStats::Dependencies::Git
+   group: Stats & Dependency Changes
+   do_stats: 1
+   stats_text: ~
+   stats_skip_file:
     - META.json
     - Changes
     - LICENSE
@@ -52,12 +54,9 @@ plugins:
     - Makefile.PL
     - README.md
 
- - +plugin: ChangeStats::Dependencies::Git
-   group: Dependency Changes
-
  - +plugin: NextRelease::Grouped
    +remove_if: $env.fake_release
-   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation, Stats, Dependency Changes
+   groups: API Changes, New Features, Enhancements, Requirements, Testing, Other Changes, Bug Fixes, Documentation, Stats & Dependency Changes
    format_date: "%{yyyy-MM-dd HH:mm:ss VVV}d"
    auto_order: 0
 
@@ -140,6 +139,12 @@ plugins:
 
  - +plugin: CheckChangesHasContent
 
+ - +plugin: Git::CheckFor::CorrectBranch
+   +version: 0.013
+   release_branch:
+    - master
+    - release
+
  - +plugin: TestRelease
 
  - +plugin: ConfirmRelease
@@ -160,11 +165,7 @@ plugins:
  - +plugin: Git::Tag
    +remove_if: $env.fake_release
    tag_format: '%v'
-   tag_message: ~
-
- - +plugin: Git::Push
-   +remove_if: $env.fake_release
-   remotes_must_exist: 1
+   tag_message: 'Release %v%n%n%c'
 
  - +plugin: InstallRelease
    +remove_if: $env.fake_release
@@ -172,6 +173,15 @@ plugins:
 
  - +plugin: BumpVersionAfterRelease::Transitional
    +remove_if: $env.fake_release
+
+ - +plugin: Git::Commit
+   allow_dirty_match: .
+   commit_msg: 'Release %v%n%n%c'
+
+
+ - +plugin: Git::Push
+   +remove_if: $env.fake_release
+   remotes_must_exist: 1
 
  - +plugin: Clean
    +remove_if: $env.fake_release
