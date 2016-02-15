@@ -33,6 +33,7 @@ plugins:
 
  - +plugin: Authority
    +version: 1.009
+   authority: 'cpan:CSSON'
    locate_comment: 1
 
  - +plugin: RewriteVersion::Transitional
