@@ -8,7 +8,6 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Documentation]
 
  [Enhancements]
-  - Improve git commits around release and tagging.
 
  [New Features]
 
@@ -19,6 +18,14 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0306 2016-02-15T16:50:13Z UTC
+ [Enhancements]
+ - Improve git commits around release and tagging.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 10 insertions(+), 5 deletions(-)
+ - (dev req) ~ Dist::Iller::Config::Author::CSSON 0.0305 --> 0.0306
 
 0.0305 2016-02-15T13:37:13Z UTC
  [Requirements]
