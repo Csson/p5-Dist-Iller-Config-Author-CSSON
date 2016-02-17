@@ -41,6 +41,7 @@ plugins:
 
  - +plugin: ChangeStats::Dependencies::Git
    group: Stats & Dependency Changes
+   add_to_first_release: 1
    do_stats: 1
    stats_text: ~
    stats_skip_file:
@@ -206,6 +207,8 @@ plugins:
    badge:
     - perl
     - travis
+    - kwalitee
+    - cpantesters
     - coverage
    formats: html, markdown
 
