@@ -11,15 +11,62 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
- [Config Changes]
-  - Add versions on all (non-core) Dist::Zilla plugins.
-  - Add some default prereq versions.
+ [Other Changes]
 
  [Requirements]
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0308 2016-02-18T21:47:28Z UTC
+ [Config Changes]
+ - Add versions on all (non-core) Dist::Zilla plugins.
+ - Add some default prereq versions.
+
+ [Stats & Dependency Changes]
+ - 4 files changed, 82 insertions(+), 9 deletions(-)
+ - (run req) ~ MooseX::AttributeDocumented (any) --> 0.1003
+ - (run req) ~ Path::Tiny (any) --> 0.072
+ - (run req) ~ Types::Path::Tiny (any) --> 0.005
+ - (run req) ~ Types::Standard (any) --> 1.000005
+ - (run req) ~ namespace::autoclean (any) --> 0.22
+ - (dev req) + Dist::Zilla 5.000
+ - (dev req) + Dist::Zilla::Plugin::Git 2.036
+ - (dev req) + Dist::Zilla::Plugin::Prereqs (any)
+ - (dev req) + Test::EOF (any)
+ - (dev req) + Test::Version 1
+ - (dev req) ~ Badge::Depot (any) --> 0.0103
+ - (dev req) ~ Dist::Zilla::Plugin::ChangeStats::Dependencies::Git (any)
+   --> 0.0100
+ - (dev req) ~ Dist::Zilla::Plugin::CheckChangesHasContent (any) --> 0.008
+ - (dev req) ~ Dist::Zilla::Plugin::Clean (any) --> 0.07
+ - (dev req) ~ Dist::Zilla::Plugin::CopyFilesFromBuild (any) --> 0.151680
+ - (dev req) ~ Dist::Zilla::Plugin::Git::Contributors (any) --> 0.017
+ - (dev req) ~ Dist::Zilla::Plugin::GithubMeta (any) --> 0.54
+ - (dev req) ~ Dist::Zilla::Plugin::InstallRelease (any) --> 0.008
+ - (dev req) ~ Dist::Zilla::Plugin::MetaProvides::Package (any) -->
+   2.003001
+ - (dev req) ~ Dist::Zilla::Plugin::NextRelease::Grouped (any) --> 0.0200
+ - (dev req) ~ Dist::Zilla::Plugin::PodWeaver (any) --> 4.006
+ - (dev req) ~ Dist::Zilla::Plugin::ReadmeAnyFromPod (any) --> 0.150250
+ - (dev req) ~ Dist::Zilla::Plugin::RunExtraTests (any) --> 0.028
+ - (dev req) ~ Dist::Zilla::Plugin::Test::Compile (any) --> 2.054
+ - (dev req) ~ Dist::Zilla::Plugin::Test::EOF (any) --> 0.0501
+ - (dev req) ~ Dist::Zilla::Plugin::Test::EOL (any) --> 0.18
+ - (dev req) ~ Dist::Zilla::Plugin::Test::Kwalitee::Extra (any) --> v0.2.1
+ - (dev req) ~ Dist::Zilla::Plugin::Test::NoTabs (any) --> 0.15
+ - (dev req) ~ Dist::Zilla::Plugin::Test::ReportPrereqs (any) --> 0.021
+ - (dev req) ~ Dist::Zilla::Plugin::Test::Version (any) --> 1.05
+ - (dev req) ~ Dist::Zilla::Plugin::TravisYML (any) --> 1.15
+ - (dev req) ~ Pod::Weaver::Section::Homepage::DefaultCPAN (any) --> 0.05
+ - (dev req) ~ Pod::Weaver::Section::Source::DefaultGitHub (any) --> 0.07
+ - (dev req) ~ Test::NoTabs (any) --> 1.4
+ - (dev req) ~ Test::Warnings (any) --> 0.026
+ - (dev req) - Dist::Zilla::Plugin::MetaProvides::Class
+ - (dev req) - Dist::Zilla::Plugin::PodnameFromClassname
+ - (dev sug) ~ Dist::Iller 0.1406 --> 0.1407
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0307 --> 0.0308
 
 0.0307 2016-02-18T01:53:35Z UTC
  [New Features]
