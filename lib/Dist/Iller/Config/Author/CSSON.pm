@@ -65,6 +65,13 @@ has splint => (
         1 => q{Include Pod::Elemental::Transformer::Splint in weaver.ini},
     }
 );
+has badges => (
+    is => 'ro',
+    isa => Bool,
+    default => 1,
+    documentation => 'Include Badge::Depot badges or not.',
+);
+
 has travis => (
     is => 'rw',
     isa => Int,

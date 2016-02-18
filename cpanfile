@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-17 13:40:05 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-18 01:42:05 UTC.
 
 on runtime => sub {
     requires 'Dist::Iller' => '0.1401';
@@ -25,8 +25,14 @@ on configure => sub {
     requires 'File::ShareDir::Install' => '0.06';
 };
 on develop => sub {
+    requires 'Badge::Depot' => '0';
+    requires 'Badge::Depot::Plugin::Coverage' => '0';
+    requires 'Badge::Depot::Plugin::Cpantesters' => '0';
+    requires 'Badge::Depot::Plugin::Kwalitee' => '0';
+    requires 'Badge::Depot::Plugin::Perl' => '0';
+    requires 'Badge::Depot::Plugin::Travis' => '0';
     requires 'Dist::Zilla::Plugin::Authority' => '1.009';
-    requires 'Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional' => '0';
+    requires 'Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional' => '0.007';
     requires 'Dist::Zilla::Plugin::ChangeStats::Dependencies::Git' => '0';
     requires 'Dist::Zilla::Plugin::CheckChangesHasContent' => '0';
     requires 'Dist::Zilla::Plugin::Clean' => '0';
@@ -57,7 +63,6 @@ on develop => sub {
     requires 'Dist::Zilla::Plugin::PodWeaver' => '0';
     requires 'Dist::Zilla::Plugin::PodnameFromClassname' => '0';
     requires 'Dist::Zilla::Plugin::Prereqs' => '0';
-    requires 'Dist::Zilla::Plugin::Prereqs::Plugins' => '0';
     requires 'Dist::Zilla::Plugin::Readme' => '0';
     requires 'Dist::Zilla::Plugin::ReadmeAnyFromPod' => '0';
     requires 'Dist::Zilla::Plugin::RewriteVersion::Transitional' => '0.007';
@@ -79,7 +84,7 @@ on develop => sub {
     requires 'Pod::Weaver::Plugin::Transformer' => '0';
     requires 'Pod::Weaver::PluginBundle::CorePrep' => '0';
     requires 'Pod::Weaver::Section::Authors' => '0';
-    requires 'Pod::Weaver::Section::Badges' => '0';
+    requires 'Pod::Weaver::Section::Badges' => '0.0401';
     requires 'Pod::Weaver::Section::Collect' => '0';
     requires 'Pod::Weaver::Section::Generic' => '0';
     requires 'Pod::Weaver::Section::Homepage::DefaultCPAN' => '0';
