@@ -26,11 +26,11 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Dist::Iller" => "0.1401",
     "Moose" => "2.0000",
-    "MooseX::AttributeDocumented" => 0,
-    "Path::Tiny" => 0,
-    "Types::Path::Tiny" => 0,
-    "Types::Standard" => 0,
-    "namespace::autoclean" => 0
+    "MooseX::AttributeDocumented" => "0.1003",
+    "Path::Tiny" => "0.072",
+    "Types::Path::Tiny" => "0.005",
+    "Types::Standard" => "1.000005",
+    "namespace::autoclean" => "0.22"
   },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
@@ -53,12 +53,12 @@ my %FallbackPrereqs = (
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
   "Moose" => "2.0000",
-  "MooseX::AttributeDocumented" => 0,
-  "Path::Tiny" => 0,
+  "MooseX::AttributeDocumented" => "0.1003",
+  "Path::Tiny" => "0.072",
   "Test::More" => "0.96",
-  "Types::Path::Tiny" => 0,
-  "Types::Standard" => 0,
-  "namespace::autoclean" => 0
+  "Types::Path::Tiny" => "0.005",
+  "Types::Standard" => "1.000005",
+  "namespace::autoclean" => "0.22"
 );
 
 
