@@ -11,7 +11,9 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
- [Other Changes]
+ [Config Changes]
+  - Add versions on all (non-core) Dist::Zilla plugins.
+  - Add some default prereq versions.
 
  [Requirements]
 

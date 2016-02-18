@@ -1,8 +1,12 @@
-/Dist-Iller-Config-Author-CSSON-*
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-18 21:30:49 UTC.
+# The following configs were used:
+# * Dist::Iller::Config::Author::CSSON: 0.0308
+
 /.build
 /_build*
 /Build
 MYMETA.*
 !META.json
 /.prove
+/Dist-Iller-Config-Author-CSSON-*
 .coverhistory.json
