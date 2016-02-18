@@ -100,8 +100,6 @@ plugins:
    - eg
    - examples
 
- - +plugin: Prereqs::Plugins
-
  - +plugin: $self.installer
 
  - +plugin: MetaJSON
@@ -179,6 +177,7 @@ plugins:
    install_command: cpanm .
 
  - +plugin: BumpVersionAfterRelease::Transitional
+   +version: 0.007
    +remove_if: $env.fake_release
 
  - +plugin: CommitAfterRelease
@@ -204,6 +203,15 @@ plugins:
  - +plugin: Name
 
  - +plugin: Badges
+   +add_if: $self.badges
+   +prereqs:
+    - develop_requires: Badge::Depot
+    - develop_requires: Badge::Depot::Plugin::Perl
+    - develop_requires: Badge::Depot::Plugin::Travis
+    - develop_requires: Badge::Depot::Plugin::Kwalitee
+    - develop_requires: Badge::Depot::Plugin::Cpantesters
+    - develop_requires: Badge::Depot::Plugin::Coverage
+    - develop_requires: Pod::Weaver::Section::Badges 0.0401
    badge:
     - perl
     - travis

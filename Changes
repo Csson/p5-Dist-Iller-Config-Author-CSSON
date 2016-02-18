@@ -10,8 +10,11 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Enhancements]
 
  [New Features]
+  - Use the new plugin-adds-prereqs to add all badges as develop prereqs.
+  - New attribute 'badges' determines if badges should be added.
 
  [Other Changes]
+  - More badges.
 
  [Requirements]
 
