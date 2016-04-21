@@ -115,6 +115,7 @@ sub is_cpan_release {
     my $self = shift;
     return $ENV{'FAKE_RELEASE'} || $self->is_private ? 0 : 1;
 }
+
 sub add_default_github {
     my $self = shift;
     # check git config
