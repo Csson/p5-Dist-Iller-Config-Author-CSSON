@@ -13,14 +13,27 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Other Changes]
 
- [Config Changes]
-  - dist.ini: Add [MetaConfig].
-  - weaver.ini: Replace [Source::DefaultGitHub] and [Source::DefaultCPAN] with [GenerateSection].
-  - Bump default List::Util version to 1.45 (uniq!).
+ [Requirements]
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0309 2016-04-21T20:55:49Z UTC
+ [Config Changes]
+ - dist.ini: Add [MetaConfig].
+ - weaver.ini: Replace [Source::DefaultGitHub] and [Source::DefaultCPAN]
+   with [GenerateSection].
+ - Bump default List::Util version to 1.45 (uniq!).
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 14 insertions(+), 9 deletions(-)
+ - (dev req) + Dist::Zilla::Plugin::MetaConfig (any)
+ - (dev req) + Pod::Weaver::Section::GenerateSection 1.01
+ - (dev req) - Pod::Weaver::Section::Homepage::DefaultCPAN
+ - (dev req) - Pod::Weaver::Section::Source::DefaultGitHub
+ - (dev sug) ~ Dist::Iller 0.1407 --> 0.1408
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0308 --> 0.0309
 
 0.0308 2016-02-18T21:47:28Z UTC
  [Config Changes]
