@@ -13,7 +13,10 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Other Changes]
 
- [Requirements]
+ [Config Changes]
+  - dist.ini: Add [MetaConfig].
+  - weaver.ini: Replace [Source::DefaultGitHub] and [Source::DefaultCPAN] with [GenerateSection].
+  - Bump default List::Util version to 1.45 (uniq!).
 
  [Stats & Dependency Changes]
 
