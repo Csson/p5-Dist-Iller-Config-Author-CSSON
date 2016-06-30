@@ -47,7 +47,7 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
 <table cellpadding="0" cellspacing="0">
 <tr>
     <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;"><a href="https://metacpan.org/pod/Types::Standard#Int">Int</a></td>
-    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>10</code></td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional, default: <code>14</code></td>
     <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
 </tr>
 </table>

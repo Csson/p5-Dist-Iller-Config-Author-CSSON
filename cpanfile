@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2016-04-21 20:32:00 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-06-30 20:49:41 UTC.
 
 on runtime => sub {
     requires 'Dist::Iller' => '0.1401';
@@ -104,5 +104,5 @@ on develop => sub {
 };
 on develop => sub {
     suggests 'Dist::Iller' => '0.1408';
-    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0309';
+    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0310';
 };

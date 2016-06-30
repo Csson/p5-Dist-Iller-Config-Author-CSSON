@@ -3,6 +3,7 @@ Revision history for Dist-Iller-Config-Author-Csson
 {{$NEXT}}
  [Config Changes]
   - Bump default Moose version to 2.1803 (avoid 2.1802 due to Type::Tiny problems).
+  - Bump default minimum Perl version to test on travis to 5.14 (due to Dist::Zilla 5.14 requirement) for now.
 
  [Bug Fixes]
 
