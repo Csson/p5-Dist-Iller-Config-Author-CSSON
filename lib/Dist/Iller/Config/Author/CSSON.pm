@@ -86,7 +86,7 @@ has travis_perl_min => (
     is => 'ro',
     isa => Int,
     lazy => 1,
-    default => '10',
+    default => '14',
     documentation_order => 101,
     documentation => q{Minimum Perl version to test on Travis. All production releases up to (and including) 'travis_perl_max' are automatically included. Only give the minor version number (eg '14' for Perl 5.14).},
 );
