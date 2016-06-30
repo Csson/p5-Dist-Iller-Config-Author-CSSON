@@ -6,7 +6,7 @@ package Dist::Iller::Config::Author::CSSON;
 
 # ABSTRACT: Dist::Iller config
 # AUTHORITY
-our $VERSION = '0.0310';
+our $VERSION = '0.0311';
 
 use Moose;
 use namespace::autoclean;
