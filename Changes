@@ -1,7 +1,8 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [API Changes]
+ [Config Changes]
+  - Bump default Moose version to 2.1803 (avoid 2.1802 due to Type::Tiny problems).
 
  [Bug Fixes]
 
