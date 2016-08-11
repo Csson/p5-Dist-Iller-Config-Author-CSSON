@@ -54,7 +54,6 @@ plugins:
    - $self.build_file
 
  - +plugin: PromptIfStale
-   phase: build
    check_all_plugins: 1
 
  - +plugin: CopyFilesFromBuild
