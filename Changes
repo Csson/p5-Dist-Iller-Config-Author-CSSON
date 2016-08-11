@@ -17,6 +17,10 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Stats & Dependency Changes]
 
+ [Config Changes]
+ - dist.ini: Add [PromptIfStale]
+ - weaver.ini: Send 'author' to the Kwalitee badge constructor.
+
  [Testing]
 
 0.0310 2016-06-30T21:01:03Z UTC
