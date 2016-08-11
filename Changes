@@ -17,11 +17,17 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Stats & Dependency Changes]
 
+ [Testing]
+
+0.0311 2016-08-11T23:12:59Z UTC
  [Config Changes]
  - dist.ini: Add [PromptIfStale]
  - weaver.ini: Send 'author' to the Kwalitee badge constructor.
 
- [Testing]
+ [Stats & Dependency Changes]
+ - 3 files changed, 6 insertions(+), 2 deletions(-)
+ - (dev req) + Dist::Zilla::Plugin::PromptIfStale (any)
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0310 --> 0.0311
 
 0.0310 2016-06-30T21:01:03Z UTC
  [Config Changes]
