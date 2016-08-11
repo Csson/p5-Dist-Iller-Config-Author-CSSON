@@ -53,6 +53,10 @@ plugins:
    - README.md
    - $self.build_file
 
+ - +plugin: PromptIfStale
+   phase: build
+   check_all_plugins: 1
+
  - +plugin: CopyFilesFromBuild
    +version: 0.151680
    copy:
@@ -269,6 +273,7 @@ plugins:
     - cpantesters
     - coverage
    formats: html, markdown
+   -kwalitee_author: CSSON
 
  - +plugin: Version
    format: Version %v, released %{YYYY-MM-dd}d.
