@@ -199,7 +199,7 @@
                   "check_all_plugins" : 1,
                   "check_all_prereqs" : 0,
                   "modules" : [],
-                  "phase" : "build",
+                  "phase" : "release",
                   "run_under_travis" : 0,
                   "skip" : []
                }
