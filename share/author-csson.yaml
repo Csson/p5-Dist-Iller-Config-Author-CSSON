@@ -72,7 +72,7 @@ plugins:
    +version: 0.007
 
  - +plugin: ChangeStats::Dependencies::Git
-   +version: 0.0100
+   +version: 0.0200
    group: Stats & Dependency Changes
    add_to_first_release: 1
    do_stats: 1
