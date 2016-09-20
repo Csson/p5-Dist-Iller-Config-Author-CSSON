@@ -5,8 +5,7 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Bug Fixes]
 
- [Config Changes]
-  - A version requirement bump.
+ [Documentation]
 
  [Enhancements]
 
@@ -19,6 +18,16 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0312 2016-09-20T13:20:05Z UTC
+ [Config Changes]
+ - A version requirement bump.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 3 insertions(+), 3 deletions(-)
+ - (dev req) ~ Dist::Zilla::Plugin::ChangeStats::Dependencies::Git 0.0100
+   --> 0.0200
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0311 --> 0.0312
 
 0.0311 2016-08-11T23:12:59Z UTC
  [Config Changes]
