@@ -14,11 +14,27 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Other Changes]
 
  [Requirements]
- - Bump plugin versions.
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0313 2016-11-26T14:18:23Z UTC
+ [Requirements]
+ - Bump plugin versions.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 9 insertions(+), 9 deletions(-)
+ - (dev req) ~ Dist::Zilla 5.000 --> 6.008
+ - (dev req) ~ Dist::Zilla::Plugin::CopyFilesFromBuild 0.151680 -->
+   0.163040
+ - (dev req) ~ Dist::Zilla::Plugin::Git 2.036 --> 2.041
+ - (dev req) ~ Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch 0.013 -->
+   0.014
+ - (dev req) ~ Dist::Zilla::Plugin::Git::Contributors 0.017 --> 0.029
+ - (dev req) ~ Dist::Zilla::Plugin::ReadmeAnyFromPod 0.150250 --> 0.163250
+ - (dev req) ~ Dist::Zilla::Plugin::Test::Compile 2.054 --> 2.056
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0312 --> 0.0313
 
 0.0312 2016-09-20T13:20:05Z UTC
  [Config Changes]
