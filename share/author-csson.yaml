@@ -26,8 +26,8 @@ default_prereq_versions:
  - Safe::Isa: 1.000005
  - String::CamelCase: 0.02
  - Try::Tiny: 0.24
- - Type::Tiny: 1.000005
- - Types::Standard: 1.000005
+ - Type::Tiny: 1.000006
+ - Types::Standard: 1.000006
  - Types::Path::Tiny: 0.005
  - version: 0.9913
  - YAML::Tiny: 1.67
