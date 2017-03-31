@@ -11,14 +11,20 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
- [Config Changes]
- - Bump Type::Tiny default prereq version.
+ [Other Changes]
 
  [Requirements]
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0314 2017-03-31T19:26:57Z UTC
+ [Config Changes]
+ - Bump Type::Tiny default prereq version.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 4 insertions(+), 4 deletions(-)
 
 0.0313 2016-11-26T14:18:23Z UTC
  [Requirements]
