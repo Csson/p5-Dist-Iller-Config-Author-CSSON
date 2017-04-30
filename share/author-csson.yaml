@@ -54,10 +54,11 @@ plugins:
    - $self.build_file
 
  - +plugin: PromptIfStale
+   +version: 0.053
    check_all_plugins: 1
 
  - +plugin: CopyFilesFromBuild
-   +version: 0.163040
+   +version: 0.170880
    copy:
    - META.json
    - LICENSE
@@ -143,7 +144,7 @@ plugins:
  - +plugin: MetaJSON
 
  - +plugin: MetaProvides::Package
-   +version: 2.003001
+   +version: 2.004003
 
  - +plugin: DistIller::MetaGeneratedBy
 
