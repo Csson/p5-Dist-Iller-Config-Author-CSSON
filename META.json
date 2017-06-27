@@ -80,7 +80,6 @@
             "Dist::Zilla::Plugin::Test::Compile" : "2.056",
             "Dist::Zilla::Plugin::Test::EOF" : "0.0501",
             "Dist::Zilla::Plugin::Test::EOL" : "0.18",
-            "Dist::Zilla::Plugin::Test::Kwalitee::Extra" : "v0.2.1",
             "Dist::Zilla::Plugin::Test::NoTabs" : "0.15",
             "Dist::Zilla::Plugin::Test::ReportPrereqs" : "0.027",
             "Dist::Zilla::Plugin::Test::Version" : "1.05",
@@ -474,11 +473,6 @@
             },
             "name" : "Git::Contributors",
             "version" : "0.030"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::Test::Kwalitee::Extra",
-            "name" : "Test::Kwalitee::Extra",
-            "version" : "v0.2.1"
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::NoTabs",
