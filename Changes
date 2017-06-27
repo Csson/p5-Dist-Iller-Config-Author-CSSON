@@ -1,6 +1,9 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
+ [Config Changes]
+ - Bump some prereqs.
+
  [API Changes]
 
  [Bug Fixes]
@@ -11,14 +14,19 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
+0.0315 2017-04-30 17:33:10 UTC
  [Config Changes]
  - Bump some plugin versions.
 
- [Requirements]
-
  [Stats & Dependency Changes]
-
- [Testing]
+ - 3 files changed, 5 insertions(+), 4 deletions(-)
+ - (run req) ~ Types::Standard 1.000005 --> 1.000006
+ - (dev req) ~ Dist::Zilla::Plugin::CopyFilesFromBuild 0.163040 -->
+   0.170880
+ - (dev req) ~ Dist::Zilla::Plugin::MetaProvides::Package 2.003001 -->
+   2.004003
+ - (dev req) ~ Dist::Zilla::Plugin::PromptIfStale (any) --> 0.053
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0313 --> 0.0315
 
 0.0314 2017-03-31T19:26:57Z UTC
  [Config Changes]
