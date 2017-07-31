@@ -134,7 +134,7 @@ sub add_default_github {
 }
 sub travis_perl {
     my $self = shift;
-    return join ' ' => map { "5.$_" } grep { $_ >= $self->travis_perl_min && $_ <= $self->travis_perl_max } qw/6 8 10 12 14 16 18 20 22/;
+    return join ' ' => map { "5.$_" } grep { $_ >= $self->travis_perl_min && $_ <= $self->travis_perl_max } qw/6 8 10 12 14 16 18 20 22 24/;
 }
 
 __PACKAGE__->meta->make_immutable;
