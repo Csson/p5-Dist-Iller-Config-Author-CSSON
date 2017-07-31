@@ -94,7 +94,7 @@ has travis_perl_max => (
     is => 'ro',
     isa => Int,
     lazy => 1,
-    default => '22',
+    default => '24',
     documentation_order => 102,
     documentation => q{Maximum Perl version to test on Travis. See 'travis_perl_min'.}
 );
