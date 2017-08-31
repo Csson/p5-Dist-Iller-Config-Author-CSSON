@@ -6,15 +6,15 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
     <p>
     <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
     <a href="https://travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON"><img src="https://api.travis-ci.org/Csson/p5-Dist-Iller-Config-Author-CSSON.svg?branch=master" alt="Travis status" /></a>
-    <a href="http://cpants.cpanauthors.org/release/CSSON/Dist-Iller-Config-Author-CSSON-0.0318"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/Dist-Iller-Config-Author-CSSON/0.0318" alt="Distribution kwalitee" /></a>
-    <a href="http://matrix.cpantesters.org/?dist=Dist-Iller-Config-Author-CSSON%200.0318"><img src="http://badgedepot.code301.com/badge/cpantesters/Dist-Iller-Config-Author-CSSON/0.0318" alt="CPAN Testers result" /></a>
+    <a href="http://cpants.cpanauthors.org/release/CSSON/Dist-Iller-Config-Author-CSSON-0.0319"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/Dist-Iller-Config-Author-CSSON/0.0319" alt="Distribution kwalitee" /></a>
+    <a href="http://matrix.cpantesters.org/?dist=Dist-Iller-Config-Author-CSSON%200.0319"><img src="http://badgedepot.code301.com/badge/cpantesters/Dist-Iller-Config-Author-CSSON/0.0319" alt="CPAN Testers result" /></a>
     <img src="https://img.shields.io/badge/coverage-42.7%-red.svg" alt="coverage 42.7%" />
     </p>
 </div>
 
 # VERSION
 
-Version 0.0318, released 2017-07-31.
+Version 0.0319, released 2017-08-31.
 
 # SYNOPSIS
 
