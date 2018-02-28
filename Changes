@@ -1,8 +1,7 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [Config Changes]
- - Stop testing *prereq_matches use (due to unexpected failures)
+ [API Changes]
 
  [Bug Fixes]
 
@@ -19,6 +18,15 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0320 2018-02-28T19:06:16Z UTC
+ [Config Changes]
+ - Stop testing *prereq_matches use (due to unexpected failures)
+
+ [Stats & Dependency Changes]
+ - 4 files changed, 3 insertions(+), 4 deletions(-)
+ - (dev req) + Dist::Zilla::Plugin::Test::Kwalitee::Extra v0.2.1
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0319 --> 0.0320
 
 0.0319 2017-08-31T22:09:24Z UTC
  [Stats & Dependency Changes]
