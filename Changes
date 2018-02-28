@@ -1,7 +1,8 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [API Changes]
+ [Config Changes]
+ - Stop testing *prereq_matches use (due to unexpected failures)
 
  [Bug Fixes]
 
