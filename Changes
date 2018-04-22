@@ -3,7 +3,8 @@ Revision history for Dist-Iller-Config-Author-Csson
 {{$NEXT}}
  [API Changes]
 
- [Bug Fixes]
+ [Config Changes]
+  - Move [PromptIfStale] to build phase.
 
  [Documentation]
 
