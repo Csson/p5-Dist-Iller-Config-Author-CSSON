@@ -3,8 +3,7 @@ Revision history for Dist-Iller-Config-Author-Csson
 {{$NEXT}}
  [API Changes]
 
- [Config Changes]
-  - Move [PromptIfStale] to build phase.
+ [Bug Fixes]
 
  [Documentation]
 
@@ -19,6 +18,14 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0321 2018-04-22T10:24:57Z UTC
+ [Config Changes]
+ - Move [PromptIfStale] to build phase.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 5 insertions(+), 4 deletions(-)
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0320 --> 0.0321
 
 0.0320 2018-02-28T19:06:16Z UTC
  [Config Changes]
