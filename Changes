@@ -1,7 +1,8 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [API Changes]
+ [Config Changes]
+ - Bump some prereqs.
 
  [Bug Fixes]
 
