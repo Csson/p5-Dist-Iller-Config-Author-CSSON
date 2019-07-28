@@ -1,8 +1,7 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [Config Changes]
- - Bump some prereqs.
+ [API Changes]
 
  [Bug Fixes]
 
@@ -19,6 +18,13 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0323 2019-07-28T18:43:50Z UTC
+ [Config Changes]
+ - Bump some prereqs.
+
+ [Stats & Dependency Changes]
+ - 2 files changed, 2 insertions(+), 2 deletions(-)
 
 0.0322 2018-06-29T22:27:23Z UTC
  [Config Changes]
