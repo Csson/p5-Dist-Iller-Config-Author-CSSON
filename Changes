@@ -1,8 +1,7 @@
 Revision history for Dist-Iller-Config-Author-Csson
 
 {{$NEXT}}
- [Config Changes]
- - Bump some version prereqs.
+ [API Changes]
 
  [Bug Fixes]
 
@@ -19,6 +18,16 @@ Revision history for Dist-Iller-Config-Author-Csson
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0325 2020-06-29T19:25:28Z UTC
+ [Config Changes]
+ - Bump some version prereqs.
+
+ [Stats & Dependency Changes]
+ - 3 files changed, 4 insertions(+), 4 deletions(-)
+ - (dev req) ~ Dist::Zilla 6.012 --> 6.015
+ - (dev req) ~ Dist::Zilla::Plugin::PromptIfStale 0.055 --> 0.057
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0324 --> 0.0325
 
 0.0324 2020-01-30T18:51:13Z UTC
  [Config Changes]
