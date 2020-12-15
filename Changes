@@ -13,12 +13,22 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Other Changes]
 
- [Config Changes]
- - Removed .travis.yml from Author::CSSON::MapMetro
- - Disabled travis by default
+ [Requirements]
+
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0326 2020-12-15T20:52:38Z UTC
+ [Config Changes]
+ - Removed .travis.yml from Author::CSSON::MapMetro
+ - Disabled travis by default
+
+ [Stats & Dependency Changes]
+ - 4 files changed, 3 insertions(+), 13 deletions(-)
+ - (dev req) - Badge::Depot::Plugin::Travis
+ - (dev req) - Dist::Zilla::Plugin::TravisYML
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0325 --> 0.0326
 
 0.0325 2020-06-29T19:25:28Z UTC
  [Config Changes]
