@@ -13,8 +13,9 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [Other Changes]
 
- [Requirements]
-
+ [Config Changes]
+ - Removed .travis.yml from Author::CSSON::MapMetro
+ - Disabled travis by default
  [Stats & Dependency Changes]
 
  [Testing]
