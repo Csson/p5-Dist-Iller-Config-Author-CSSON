@@ -210,10 +210,9 @@ plugins:
  - +plugin: UploadToCPAN
    +add_if: $self.is_cpan_release
 
- - +plugin: TravisYML
-   +add_if: $self.travis
-   +version: 1.15
-   perl_version: $self.travis_perl
+ - +plugin: Author::CSSON::GithubActions
+   +add_if: $self.is_cpan_release
+   workflow_class: Author::CSSON::GithubActions::BaseWorkflow
 
  - +plugin: CommitBeforeTag
    +base: Git::Commit
