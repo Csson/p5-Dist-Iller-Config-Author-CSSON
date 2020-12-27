@@ -51,7 +51,11 @@ has homepage => (
     lazy => 1,
     default => sub {
         my $self = shift;
-        $self->has_distribution_name ? sprintf 'https://metacpan.org/release/%s', $self->distribution_name : undef;
+        my $distribution_name = $self->global && $self->global->has_distribution_name ? $self->global->distribution_name
+                              : $self->has_distribution_name ? $self->distribution_name
+                              : undef
+                              ;
+        return $distribution_name ? sprintf 'https://metacpan.org/release/%s', $distribution_name : undef;
     },
     documentation_default => q{https://metacpan.org/release/[distribution_name]},
     documentation => q{URL to the distribution's homepage.},
