@@ -11,16 +11,30 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
- [Config Changes]
- - Replaced [TravisYML] with [Author::CSSON::GithubActions]
- - Temporarily (hopefully) removed [Test::Kwalitee::Extra], due to installation issues
- - Use $self.distribution_name in gitignore, so that it gets set automatically
+ [Other Changes]
 
  [Requirements]
 
  [Stats & Dependency Changes]
 
  [Testing]
+
+0.0327 2020-12-27T18:32:55Z UTC
+ [Config Changes]
+ - Replaced [TravisYML] with [Author::CSSON::GithubActions]
+ - Temporarily (hopefully) removed [Test::Kwalitee::Extra], due to
+   installation issues
+ - Use $self.distribution_name in gitignore, so that it gets set
+   automatically
+
+ [Stats & Dependency Changes]
+ - 5 files changed, 67 insertions(+), 16 deletions(-)
+ - (dev req) +
+   Dist::Zilla::Plugin::Author::CSSON::GithubActions::Workflow::TestWithMakefile
+   0.0106
+ - (dev req) - Dist::Zilla::Plugin::Test::Kwalitee::Extra
+ - (dev sug) ~ Dist::Iller 0.1408 --> 0.1409
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0326 --> 0.0327
 
 0.0326 2020-12-15T20:52:38Z UTC
  [Config Changes]
