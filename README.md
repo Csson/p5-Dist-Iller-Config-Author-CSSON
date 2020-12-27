@@ -5,15 +5,14 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
 <div>
     <p>
     <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
-    <a href="http://cpants.cpanauthors.org/release/CSSON/Dist-Iller-Config-Author-CSSON-0.0326"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/Dist-Iller-Config-Author-CSSON/0.0326" alt="Distribution kwalitee" /></a>
-    <a href="http://matrix.cpantesters.org/?dist=Dist-Iller-Config-Author-CSSON%200.0326"><img src="http://badgedepot.code301.com/badge/cpantesters/Dist-Iller-Config-Author-CSSON/0.0326" alt="CPAN Testers result" /></a>
-    <img src="https://img.shields.io/badge/coverage-42.7%-red.svg" alt="coverage 42.7%" />
+    <a href="http://cpants.cpanauthors.org/release/CSSON/Dist-Iller-Config-Author-CSSON-0.0327"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/Dist-Iller-Config-Author-CSSON/0.0327" alt="Distribution kwalitee" /></a>
+    <a href="http://matrix.cpantesters.org/?dist=Dist-Iller-Config-Author-CSSON%200.0327"><img src="http://badgedepot.code301.com/badge/cpantesters/Dist-Iller-Config-Author-CSSON/0.0327" alt="CPAN Testers result" /></a>
     </p>
 </div>
 
 # VERSION
 
-Version 0.0326, released 2020-12-15.
+Version 0.0327, released 2020-12-27.
 
 # SYNOPSIS
 
@@ -160,6 +159,18 @@ Dist::Iller::Config::Author::Csson is a [Dist::Iller](https://metacpan.org/pod/D
     <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">read/write</td>
     <td style="text-align: right; padding-right: 6px; padding-left: 6px;"><code>1</code>:</td>
     <td style="padding-left: 12px;">Include Pod::Elemental::Transformer::Splint in weaver.ini</td>
+</tr>
+</table>
+
+<p></p>
+
+## global
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">Maybe[<a href='https://metacpan.org/pod/Types::Standard#InstanceOf'>InstanceOf</a>['Dist::Iller::DocType::Global']]</td>
+    <td style="padding-right: 6px; padding-left: 6px; border-right: 1px solid #b8b8b8; white-space: nowrap;">optional</td>
+    <td style="padding-left: 6px; padding-right: 6px; white-space: nowrap;">read-only</td>
 </tr>
 </table>
 

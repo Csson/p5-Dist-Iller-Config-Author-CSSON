@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2020-12-15 20:51:01 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2020-12-27 13:31:58 UTC.
 
 on runtime => sub {
     requires 'Dist::Iller' => '0.1401';
@@ -31,6 +31,7 @@ on develop => sub {
     requires 'Badge::Depot::Plugin::Kwalitee' => '0';
     requires 'Badge::Depot::Plugin::Perl' => '0';
     requires 'Dist::Zilla' => '6.015';
+    requires 'Dist::Zilla::Plugin::Author::CSSON::GithubActions::Workflow::TestWithMakefile' => '0.0106';
     requires 'Dist::Zilla::Plugin::Authority' => '1.009';
     requires 'Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional' => '0.009';
     requires 'Dist::Zilla::Plugin::ChangeStats::Dependencies::Git' => '0.0200';
@@ -72,7 +73,6 @@ on develop => sub {
     requires 'Dist::Zilla::Plugin::Test::Compile' => '2.058';
     requires 'Dist::Zilla::Plugin::Test::EOF' => '0.0501';
     requires 'Dist::Zilla::Plugin::Test::EOL' => '0.18';
-    requires 'Dist::Zilla::Plugin::Test::Kwalitee::Extra' => 'v0.2.1';
     requires 'Dist::Zilla::Plugin::Test::NoTabs' => '0.15';
     requires 'Dist::Zilla::Plugin::Test::ReportPrereqs' => '0.027';
     requires 'Dist::Zilla::Plugin::Test::Version' => '1.09';
@@ -102,6 +102,6 @@ on develop => sub {
     requires 'Test::Warnings' => '0.026';
 };
 on develop => sub {
-    suggests 'Dist::Iller' => '0.1408';
-    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0326';
+    suggests 'Dist::Iller' => '0.1409';
+    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0327';
 };

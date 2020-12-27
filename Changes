@@ -11,7 +11,10 @@ Revision history for Dist-Iller-Config-Author-Csson
 
  [New Features]
 
- [Other Changes]
+ [Config Changes]
+ - Replaced [TravisYML] with [Author::CSSON::GithubActions]
+ - Temporarily (hopefully) removed [Test::Kwalitee::Extra], due to installation issues
+ - Use $self.distribution_name in gitignore, so that it gets set automatically
 
  [Requirements]
 
