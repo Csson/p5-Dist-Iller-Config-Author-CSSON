@@ -1,8 +1,9 @@
 ---
-doctype: dist
+doctype: global
 
-header:
-  name: Dist-Iller-Config-Author-CSSON
+distribution_name: Dist-Iller-Config-Author-CSSON
+---
+doctype: dist
 
 prereqs:
   runtime:
@@ -33,6 +34,3 @@ doctype: cpanfile
 doctype: gitignore
 
 config: Author::CSSON
-
-always:
- - /Dist-Iller-Config-Author-CSSON-*
