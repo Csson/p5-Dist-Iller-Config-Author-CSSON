@@ -152,9 +152,9 @@ plugins:
  - +plugin: Git::Contributors
    +version: 0.035
 
- - +plugin: Test::Kwalitee::Extra
-   +version: v0.2.1
-   arg: "!prereq_matches_use !build_prereq_matches_use"
+ #- +plugin: Test::Kwalitee::Extra
+ #  +version: v0.2.1
+ #  arg: "!prereq_matches_use !build_prereq_matches_use"
 
  - +plugin: Test::NoTabs
    +version: 0.15
@@ -210,9 +210,9 @@ plugins:
  - +plugin: UploadToCPAN
    +add_if: $self.is_cpan_release
 
- - +plugin: Author::CSSON::GithubActions
+ - +plugin: Author::CSSON::GithubActions::Workflow::TestWithMakefile
    +add_if: $self.is_cpan_release
-   workflow_class: Author::CSSON::GithubActions::BaseWorkflow
+   +version: 0.0106
 
  - +plugin: CommitBeforeTag
    +base: Git::Commit
@@ -343,6 +343,7 @@ always:
  - MYMETA.*
  - '!META.json'
  - /.prove
+ - $self.distribution_name
 
 onexist:
  - .coverhistory.json
