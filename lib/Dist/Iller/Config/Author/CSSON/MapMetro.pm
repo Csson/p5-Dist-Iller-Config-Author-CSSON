@@ -6,7 +6,7 @@ package Dist::Iller::Config::Author::CSSON::MapMetro;
 
 # ABSTRACT: Dist::Iller config for Map::Metro
 # AUTHORITY
-our $VERSION = '0.0328';
+our $VERSION = '0.0329';
 
 use Moose;
 extends 'Dist::Iller::Config::Author::CSSON';
