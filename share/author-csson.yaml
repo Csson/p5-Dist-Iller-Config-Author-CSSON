@@ -56,7 +56,7 @@ plugins:
  - +plugin: PromptIfStale
    +version: 0.057
    check_all_plugins: 1
-   phase: build
+   phase: release
 
  - +plugin: CopyFilesFromBuild
    +version: 0.170880
@@ -265,14 +265,17 @@ plugins:
     #- develop_requires: Badge::Depot::Plugin::Kwalitee
     #- develop_requires: Badge::Depot::Plugin::Cpantesters
     - develop_requires: Badge::Depot::Plugin::Coverage
+    - develop_requires: Badge::Depot::Plugin::Githubactions
     - develop_requires: Pod::Weaver::Section::Badges 0.0401
    badge:
     - perl
     #- kwalitee
     #- cpantesters
     - coverage
+    - githubactions
    formats: html, markdown
-   -kwalitee_author: CSSON
+   #-kwalitee_author: CSSON
+   -githubactions_workflow: makefile-test
 
  - +plugin: Version
    format: Version %v, released %{YYYY-MM-dd}d.
