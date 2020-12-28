@@ -12,16 +12,30 @@ Revision history for Dist-Iller-Config-Author-Csson
  [New Features]
 
  [Other Changes]
- - Set required Perl version to 5.14, since that is what Dist::Zilla requires.
 
+ [Requirements]
+
+ [Stats & Dependency Changes]
+
+ [Testing]
+
+0.0328 2020-12-28T12:17:24Z UTC
  [Config Changes]
  - Add Githubactions badge.
  - Remove Kwalitee and Cpantesters badges (hopefully temporarily).
  - Move PromptIfStale from 'build' to 'release'.
 
- [Stats & Dependency Changes]
+ [Other Changes]
+ - Set required Perl version to 5.14, since that is what Dist::Zilla
+   requires.
 
- [Testing]
+ [Stats & Dependency Changes]
+ - 4 files changed, 14 insertions(+), 11 deletions(-)
+ - (run req) ~ perl 5.010000 --> 5.014000
+ - (dev req) + Badge::Depot::Plugin::Githubactions (any)
+ - (dev req) - Badge::Depot::Plugin::Cpantesters
+ - (dev req) - Badge::Depot::Plugin::Kwalitee
+ - (dev sug) ~ Dist::Iller::Config::Author::CSSON 0.0327 --> 0.0328
 
 0.0327 2020-12-27T18:32:55Z UTC
  [Config Changes]
