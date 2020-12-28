@@ -12,8 +12,12 @@ Revision history for Dist-Iller-Config-Author-Csson
  [New Features]
 
  [Other Changes]
+ - Set required Perl version to 5.14, since that is what Dist::Zilla requires.
 
- [Requirements]
+ [Config Changes]
+ - Add Githubactions badge.
+ - Remove Kwalitee and Cpantesters badges (hopefully temporarily).
+ - Move PromptIfStale from 'build' to 'release'.
 
  [Stats & Dependency Changes]
 

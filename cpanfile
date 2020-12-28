@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2020-12-27 13:31:58 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2020-12-28 12:13:32 UTC.
 
 on runtime => sub {
     requires 'Dist::Iller' => '0.1401';
@@ -8,7 +8,7 @@ on runtime => sub {
     requires 'Types::Path::Tiny' => '0.005';
     requires 'Types::Standard' => '1.000006';
     requires 'namespace::autoclean' => '0.22';
-    requires 'perl' => '5.010000';
+    requires 'perl' => '5.014000';
 };
 on test => sub {
     requires 'ExtUtils::MakeMaker' => '0';
@@ -27,8 +27,7 @@ on configure => sub {
 on develop => sub {
     requires 'Badge::Depot' => '0.0103';
     requires 'Badge::Depot::Plugin::Coverage' => '0';
-    requires 'Badge::Depot::Plugin::Cpantesters' => '0';
-    requires 'Badge::Depot::Plugin::Kwalitee' => '0';
+    requires 'Badge::Depot::Plugin::Githubactions' => '0';
     requires 'Badge::Depot::Plugin::Perl' => '0';
     requires 'Dist::Zilla' => '6.015';
     requires 'Dist::Zilla::Plugin::Author::CSSON::GithubActions::Workflow::TestWithMakefile' => '0.0106';
@@ -103,5 +102,5 @@ on develop => sub {
 };
 on develop => sub {
     suggests 'Dist::Iller' => '0.1409';
-    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0327';
+    suggests 'Dist::Iller::Config::Author::CSSON' => '0.0328';
 };

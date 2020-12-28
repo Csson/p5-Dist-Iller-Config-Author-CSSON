@@ -4,15 +4,15 @@ Dist::Iller::Config::Author::CSSON - Dist::Iller config
 
 <div>
     <p>
-    <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
-    <a href="http://cpants.cpanauthors.org/release/CSSON/Dist-Iller-Config-Author-CSSON-0.0327"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/Dist-Iller-Config-Author-CSSON/0.0327" alt="Distribution kwalitee" /></a>
-    <a href="http://matrix.cpantesters.org/?dist=Dist-Iller-Config-Author-CSSON%200.0327"><img src="http://badgedepot.code301.com/badge/cpantesters/Dist-Iller-Config-Author-CSSON/0.0327" alt="CPAN Testers result" /></a>
+    <img src="https://img.shields.io/badge/perl-5.14+-blue.svg" alt="Requires Perl 5.14+" />
+    <img src="https://img.shields.io/badge/coverage-42.7%25-red.svg" alt="coverage 42.7%" />
+    <a href="https://github.com/Csson/p5-Dist-Iller-Config-Author-CSSON/actions?query=workflow%3Amakefile-test"><img src="https://img.shields.io/github/workflow/status/Csson/p5-Dist-Iller-Config-Author-CSSON/makefile-test" alt="Build status at Github" /></a>
     </p>
 </div>
 
 # VERSION
 
-Version 0.0327, released 2020-12-27.
+Version 0.0328, released 2020-12-28.
 
 # SYNOPSIS
 
